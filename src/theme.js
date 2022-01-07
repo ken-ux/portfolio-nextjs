@@ -13,11 +13,17 @@ const theme = createTheme({
     error: {
       main: red.A400,
     },
+    text: {
+      primary: "#ffffff",
+    },
+    background: {
+      default: "#000000"
+    }
   },
   typography: {
     button: {
       textTransform: "none",
-    }
+    },
   },
 });
 
