@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Link from "next/link";
+import Link from '../src/Link';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
@@ -11,7 +11,7 @@ import Container from '@mui/material/Container';
 import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
-const pages = ['Resume', 'About', 'Work'];
+const pages = ['Home', 'About', 'Resume'];
 
 const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
@@ -34,22 +34,18 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ mr: 2, color: 'black', display: { xs: 'none', md: 'flex' } }}
+            sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, flexGrow: 1 }}
           >
-            Kenny Nguyen
+            LOGO
           </Typography>
 
-          <Box sx={{ flexGrow: 1, display: { xs: 'none', md: 'flex' }, flexDirection: "row-reverse" }}>
+          <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Button
-                key={page}
-                href="/"
-                size="large"
-                onClick={handleCloseNavMenu}
-                sx={{ my: 2, color: 'black', display: 'block' }}
-              >
-                {page}
-              </Button>
+              <Link href="/" color="#ffffff" key={page} sx={{ textDecoration: "none", my: 2, mx: 1, display: 'block' }}>
+                <Typography>
+                  {page}
+                </Typography>
+              </Link>
             ))}
           </Box>
 
