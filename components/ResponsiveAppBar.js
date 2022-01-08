@@ -8,15 +8,14 @@ import Typography from '@mui/material/Typography';
 import Menu from '@mui/material/Menu';
 import MenuIcon from '@mui/icons-material/Menu';
 import Container from '@mui/material/Container';
-import Button from '@mui/material/Button';
 import MenuItem from '@mui/material/MenuItem';
 
 const pages = ['Home', 'About', 'Resume'];
 
 const ResponsiveAppBar = () => {
-  const [anchorElNav, setAnchorElNav] = React.useState<null | HTMLElement>(null);
+  const [anchorElNav, setAnchorElNav] = React.useState();
 
-  const handleOpenNavMenu = (event: React.MouseEvent<HTMLElement>) => {
+  const handleOpenNavMenu = (event) => {
     setAnchorElNav(event.currentTarget);
   };
 
@@ -25,7 +24,7 @@ const ResponsiveAppBar = () => {
   };
 
   return (
-    <AppBar position="static" elevation={0}>
+    <AppBar position="static" elevation={0} color="transparent" sx={{ my: 8, px: 8 }}>
       <Container maxWidth="xl">
         <Toolbar disableGutters>
 
@@ -41,8 +40,8 @@ const ResponsiveAppBar = () => {
 
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
-              <Link href="/" color="#ffffff" key={page} sx={{ textDecoration: "none", my: 2, mx: 1, display: 'block' }}>
-                <Typography>
+              <Link href="/" key={page} sx={{ textDecoration: "none", my: 2, mx: 2, display: 'block' }}>
+                <Typography variant="h6" color="white" sx={{ transition: 'opacity 170ms ease-in-out', '&:hover': { opacity: "60%", transition: 'opacity 170ms ease-in-out' } }}>
                   {page}
                 </Typography>
               </Link>
@@ -50,7 +49,7 @@ const ResponsiveAppBar = () => {
           </Box>
 
           {/* Mobile View */}
-          <Box sx={{ flexGrow: 1, color: 'black', display: { xs: 'flex', md: 'none' } }}>
+          <Box sx={{ flexGrow: 1, color: 'white', display: { xs: 'flex', md: 'none' } }}>
             <IconButton
               size="large"
               aria-label="links"
@@ -81,7 +80,7 @@ const ResponsiveAppBar = () => {
             >
               {pages.map((page) => (
                 <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center">{page}</Typography>
+                  <Typography color="black" textAlign="center">{page}</Typography>
                 </MenuItem>
               ))}
             </Menu>
@@ -90,7 +89,7 @@ const ResponsiveAppBar = () => {
             variant="h6"
             noWrap
             component="div"
-            sx={{ flexGrow: 1, color: 'black', display: { xs: 'flex', md: 'none' } }}
+            sx={{ flexGrow: 1, color: 'white', display: { xs: 'flex', md: 'none' } }}
           >
             Kenny Nguyen
           </Typography>
