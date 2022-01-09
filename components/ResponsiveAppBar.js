@@ -29,11 +29,11 @@ const ResponsiveAppBar = () => {
 
           {/* Desktop View */}
           <Box
-            sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, flexGrow: 1,
-            transition: 'opacity 170ms ease-in-out', '&:hover': { opacity: "50%", transition: 'opacity 170ms ease-in-out' } }}
-            component={Link} href="/"
+            sx={{ mr: 2, display: { xs: 'none', md: 'flex' }, flexGrow: 1 }}
           >
+            <Box component={Link} href="/" sx={{ transition: 'opacity 170ms ease-in-out', '&:hover': { opacity: "50%", transition: 'opacity 170ms ease-in-out' } }}>
               <Image src="/icon.svg" height="50px" width="50px" />
+            </Box>
           </Box>
 
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
