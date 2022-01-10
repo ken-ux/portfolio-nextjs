@@ -37,13 +37,6 @@ const ResponsiveAppBar = () => {
           </Box>
 
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
-            {/* {pages.map((page) => (
-              <Link href="/" key={page} sx={{ textDecoration: "none", my: 2, mx: 2, display: 'block' }}>
-                <Typography variant="h6" color="white" sx={{ transition: 'opacity 170ms ease-in-out', '&:hover': { opacity: "60%", transition: 'opacity 170ms ease-in-out' } }}>
-                  {page}
-                </Typography>
-              </Link>
-            ))} */}
             <Link href="/" sx={{ textDecoration: "none", my: 2, mx: 2, display: 'block' }}>
               <Typography variant="h6" color="white" sx={{ transition: 'opacity 170ms ease-in-out', '&:hover': { opacity: "60%", transition: 'opacity 170ms ease-in-out' } }}>
                 Home
@@ -91,11 +84,6 @@ const ResponsiveAppBar = () => {
                 display: { xs: 'block', md: 'none' },
               }}
             >
-              {/* {pages.map((page) => (
-                <MenuItem key={page} onClick={handleCloseNavMenu}>
-                  <Typography color="black" textAlign="center">{page}</Typography>
-                </MenuItem>
-              ))} */}
               <MenuItem onClick={handleCloseNavMenu}>
                 <Typography color="black" textAlign="center" underline="none" component={Link} href="/">Home</Typography>
               </MenuItem>
