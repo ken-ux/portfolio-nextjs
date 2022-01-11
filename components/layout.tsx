@@ -2,9 +2,8 @@ import styles from "./layout.module.css";
 import Link from "next/link";
 import ResponsiveAppBar from "./ResponsiveAppBar";
 import Typography from "@mui/material/Typography";
-import Container from '@mui/material/Container';
-
-const name = "Kenny";
+import Container from "@mui/material/Container";
+import Box from "@mui/material/Box";
 
 export default function Layout({
   children,
@@ -17,7 +16,15 @@ export default function Layout({
     <Container maxWidth="xl" disableGutters>
       <ResponsiveAppBar />
 
-      <main className={styles.container}>{children}</main>
+      <Box
+        component="main"
+        sx={{
+          p: { xs: "1rem 3rem", md: "2rem 6rem" },
+          m: "0 auto 4rem",
+        }}
+      >
+        {children}
+      </Box>
 
       {!home && (
         <div className={styles.backToHome}>
@@ -27,7 +34,9 @@ export default function Layout({
         </div>
       )}
 
-      <Typography variant="subtitle2" align="center">Made with care by Kenny Nguyen 🌱</Typography>
+      <Typography variant="subtitle2" align="center" sx={{my: 2}}>
+        © {new Date().getFullYear()} — Coded with care by Kenny Nguyen ɿ(｡･ɜ･)ɾ
+      </Typography>
     </Container>
   );
 }
