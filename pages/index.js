@@ -8,6 +8,7 @@ import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import IconButton from "@mui/material/IconButton";
 
 export default function Index() {
+  
   return (
     <Layout home>
       <Box sx={{ mt: 4, mb: 24 }}>
@@ -22,7 +23,7 @@ export default function Index() {
           <em>noun</em>
           <br />
           <ol>
-            <li>a seattle-based, ux designer + frontend engineer</li>
+            <li>a seattle-based product designer + frontend engineer</li>
             <li>a curator of digital experiences</li>
           </ol>
         </Typography>
