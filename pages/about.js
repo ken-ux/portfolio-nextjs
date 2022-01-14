@@ -10,7 +10,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 
 export default function About() {
   return (
-    <Layout>
+    <Layout home>
       <Box
         sx={{
           display: "flex",
@@ -29,11 +29,9 @@ export default function About() {
             engineer.
             <br />
             <br />I envision design as a way to harness creativity, expand
-            boundaries, and deliver intention.
-            <br />
-            <br />I hope to build my career with these principles in mind;
-            creating experiences that are refined enough to endure, be adored,
-            and contribute to social good.
+            boundaries, and deliver intention. I hope to build my career with
+            these principles in mind; creating experiences that contribute to
+            social good while being refined to endure and be adored.
           </Typography>
           <br />
           <br />
