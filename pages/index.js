@@ -8,11 +8,15 @@ import VolumeUpIcon from "@mui/icons-material/VolumeUp";
 import IconButton from "@mui/material/IconButton";
 
 export default function Index() {
-  
   return (
     <Layout home>
       <Box sx={{ mt: 4, mb: 24 }}>
-        <Typography variant="h4" component="h1" gutterBottom>
+        <Typography
+          variant="h4"
+          component="h1"
+          gutterBottom
+          sx={{ fontWeight: "normal" }}
+        >
           Kenny Nguyen
           <br />
           /ˈkɛni ŋwiəŋ˧˨/{" "}
@@ -34,24 +38,28 @@ export default function Index() {
           title="VSRS Website Redesign"
           text="Text"
           tags="UI/UX, Web"
+          link="/"
         />
         <ProjectCard
           image="/images/pura_splash.png"
           title="Pura"
           text="Mobile app for making fishing safer for coastal communities."
           tags="UI/UX, Mobile"
+          link="/projects/pura"
         />
         <ProjectCard
           image="/images/packwithus_splash.png"
           title="Pack With Us"
           text="Service design that incorporates AI to prepare for trips."
           tags="Service Design, Web, UX Research"
+          link="/"
         />
         <ProjectCard
           image="/images/collegedemo_splash.png"
           title="College Racial Demographics"
           text="Infographic of racial/gender diversity refined through user research."
           tags="Information Design"
+          link="/"
         />
       </Grid>
     </Layout>
