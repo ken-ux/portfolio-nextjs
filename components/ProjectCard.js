@@ -13,7 +13,6 @@ export default function ProjectCard(props) {
     <Grid item xs={12} md={6}>
       <Card
         sx={{
-          maxWidth: 600,
           position: "relative",
           transition: "0.5s",
           "&:hover": { transform: "scale(0.99)" },
