@@ -1,4 +1,3 @@
-import styles from "./layout.module.css";
 import Link from "next/link";
 import ResponsiveAppBar from "./ResponsiveAppBar";
 import Typography from "@mui/material/Typography";
