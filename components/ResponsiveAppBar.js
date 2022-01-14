@@ -11,7 +11,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
 
-const ResponsiveAppBar = () => {
+const ResponsiveAppBar = ({ home }) => {
   const [anchorElNav, setAnchorElNav] = React.useState();
 
   const handleOpenNavMenu = (event) => {
@@ -26,8 +26,8 @@ const ResponsiveAppBar = () => {
     <AppBar
       position="static"
       elevation={0}
-      color="transparent"
-      sx={{ my: 8, px: { xs: 2, md: 8 } }}
+      color={home ? "transparent" : "inherit"}
+      sx={{ py: 8, px: { xs: 2, md: 8 } }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -55,7 +55,7 @@ const ResponsiveAppBar = () => {
             >
               <Typography
                 variant="h6"
-                color="white"
+                color={home ? "white" : "black"}
                 sx={{
                   transition: "opacity 170ms ease-in-out",
                   "&:hover": {
@@ -73,7 +73,7 @@ const ResponsiveAppBar = () => {
             >
               <Typography
                 variant="h6"
-                color="white"
+                color={home ? "white" : "black"}
                 sx={{
                   transition: "opacity 170ms ease-in-out",
                   "&:hover": {
@@ -93,7 +93,7 @@ const ResponsiveAppBar = () => {
             >
               <Typography
                 variant="h6"
-                color="white"
+                color={home ? "white" : "black"}
                 sx={{
                   transition: "opacity 170ms ease-in-out",
                   "&:hover": {

@@ -14,29 +14,35 @@ export default function Layout({
 }) {
   return (
     <Container maxWidth="xl" disableGutters>
-      <ResponsiveAppBar />
+      <ResponsiveAppBar home={home ? true : false} />
 
       <Box
         component="main"
         sx={{
-          p: { xs: "1rem 3rem", md: "2rem 6rem" },
-          m: "0 auto 4rem",
+          backgroundColor: home ? "transparent" : "white",
+          color: home ? "inherit" : "black",
+          py: "2rem",
+          px: { xs: "3rem", md: "6rem" },
+          m: "0 auto",
         }}
       >
         {children}
       </Box>
 
-      {!home && (
-        <div className={styles.backToHome}>
-          <Link href="/">
-            <a>← Back to home</a>
-          </Link>
-        </div>
-      )}
-
-      <Typography variant="subtitle2" align="center" sx={{my: 2}}>
-        © {new Date().getFullYear()} — Coded with care by Kenny Nguyen ɿ(｡･ɜ･)ɾ
-      </Typography>
+      <Box
+        component="footer"
+        sx={{
+          pt: 8,
+          pb: 4,
+          backgroundColor: home ? "black" : "white",
+          color: home ? "white" : "black",
+        }}
+      >
+        <Typography variant="body2" align="center">
+          © {new Date().getFullYear()} — Coded with care by Kenny Nguyen{" "}
+          ɿ(｡･ɜ･)ɾ
+        </Typography>
+      </Box>
     </Container>
   );
 }
