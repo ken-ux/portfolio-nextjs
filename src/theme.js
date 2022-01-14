@@ -24,6 +24,9 @@ const theme = createTheme({
     button: {
       textTransform: "none",
     },
+    h4: {
+      fontWeight: "bold"
+    }
   },
 });
 

@@ -50,7 +50,7 @@ export default function ProjectCard(props) {
                 sx={{ px: 5 }}
               >
                 <Typography variant="h4" component="h2">
-                  <strong>{props.title}</strong>
+                  {props.title}
                 </Typography>
                 <Typography>{props.text}</Typography>
                 <br />
