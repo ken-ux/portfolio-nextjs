@@ -87,14 +87,15 @@ export default function Pura() {
               <strong>UX Writing</strong>
               <br />I handled UX writing for the text descriptions included in
               our hazard information and reporting screens. This included any
-              buttons or labels, as well as ensuring consistent copy across all
+              buttons or labels, as well as ensuring consistent copy across
               texts.
               <br />
               <br />
               <strong>Sketching, Prototyping, and Final Iteration</strong>
-              <br />I led interactive prototyping for the mid-fidelity design.
-              In addition, I independently iterated on our initial design to
-              create a high-fidelity version.
+              <br />I sketched the initial layout for our app. I also
+              contributed to interactive prototyping for the mid-fidelity
+              design. In addition, I independently iterated on our mid-fidelity
+              design after the hackathon to create a high-fidelity version.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -166,7 +167,7 @@ export default function Pura() {
         </Grid>
 
         <Grid item>
-          <Typography variant="h4">Informaton Architecture</Typography>
+          <Typography variant="h4">Information Architecture</Typography>
           <Box sx={{ textAlign: "center" }}>
             <Image
               src="/images/pura/info_arch.svg"
@@ -179,12 +180,12 @@ export default function Pura() {
 
         <Grid container item columnSpacing={4} rowSpacing={4}>
           <Grid item xs={12}>
-            <Typography variant="h4">Wireframing</Typography>
+            <Typography variant="h4">Sketches</Typography>
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography component="span">
               We began by individually sketching a general layout for our app
-              which we branded as Pura. Pura would allow users to view
+              that we branded as Pura. Pura would allow users to view
               information about their local bodies of water before fishing or
               harvesting.
               <br />
@@ -367,6 +368,36 @@ export default function Pura() {
                 />
               );
             })}
+          </Grid>
+        </Grid>
+
+        <Grid container item xs={12} rowSpacing={4}>
+          <Grid item xs={12}>
+            <Typography variant="h4">Reflection</Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography>
+              This project challenged me and my teammates immensely. Not only
+              was this each of our members' first hackathon, it was our first
+              time applying a formal design process and methodology. It was a
+              rich learning experience that tested our ability to think
+              dynamically, work systematically, and execute a clear vision. And
+              it paid off! We won the Best Impact award for the mid-fidelity
+              design we submitted.
+              <br />
+              <br />
+            </Typography>
+            <Box sx={{ textAlign: "center" }}>
+              <Image
+                src="/images/pura/hackathon.jpg"
+                width={1024 / 1.5}
+                height={681 / 1.5}
+                alt="Team holding up award certificates"
+              />
+              <Typography variant="body2">
+                Left to Right: Bely, Lauren, me, Gabrielle.
+              </Typography>
+            </Box>
           </Grid>
         </Grid>
       </Grid>
