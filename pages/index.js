@@ -36,29 +36,29 @@ export default function Index() {
         <ProjectCard
           image="/images/vsrs_splash.png"
           title="VSRS Website Redesign"
-          text="Text"
-          tags="UI/UX, Web"
-          link="/"
+          text="Redesign of a research website for clarity and stronger identity."
+          tags="UI/UX, Web Design, UX Research"
+          link="/projects/vsrs"
         />
         <ProjectCard
           image="/images/pura_splash.png"
           title="Pura"
           text="Mobile app for making fishing safer for coastal communities."
-          tags="UI/UX, Mobile"
+          tags="UI/UX, Mobile Design"
           link="/projects/pura"
         />
         <ProjectCard
           image="/images/packwithus_splash.png"
           title="Pack With Us"
-          text="Service design that incorporates AI to prepare for trips."
-          tags="Service Design, Web, UX Research"
-          link="/"
+          text="Service design for a holistic trip-planning experience."
+          tags="Service Design, Web Design, UX Research"
+          link="/projects/packwithus"
         />
         <ProjectCard
           image="/images/collegedemo_splash.png"
-          title="College Racial Demographics"
-          text="Infographic of racial/gender diversity refined through user research."
-          tags="Information Design"
+          title="Demographics of Washington Universities"
+          text="Infographic of racial and gender diversity refined through user research."
+          tags="Information Design, Data Science, UX Research"
           link="/"
         />
       </Grid>
