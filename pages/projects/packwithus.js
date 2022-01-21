@@ -139,7 +139,7 @@ export default function PackWithUs() {
               <br />
               In addition, our team conducted a brief field study at Seatac
               Airport to observe and interview travelers about their own qualms
-              that come with preparing for a trip.
+              that came with preparing for their flight.
             </Typography>
           </Grid>
         </Grid>
@@ -149,8 +149,25 @@ export default function PackWithUs() {
             <Typography variant="h4">Insights</Typography>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography>
-              <strong>Problem Space</strong>
+            <Typography component="span">
+              From our research, we concluded that preparing for a flight is
+              still an anxiety-inducing experience for infrequent and frequent
+              travelers alike. In addition, flight-booking agencies are largely
+              uninvolved with flyers after seats are purchased, further
+              compounding issues of unpreparedness. Most importantly,{" "}
+              <strong>
+                travelers often act independently, even when it may impede them
+                from getting help.
+              </strong>
+              <br />
+              <br />
+              Altogether, our team decided that these insights pointed towards
+              an overall need for a resource of centralized information which:
+              <ul>
+                <li>Emphasizes a sense of autonomy for each user.</li>
+                <li>Bridges knowledge gaps for different kinds of users.</li>
+                <li>Understands priorities of an individual user.</li>
+              </ul>
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -160,6 +177,10 @@ export default function PackWithUs() {
               width={1080 / 2}
               height={807 / 2}
             />
+            <Typography variant="caption">
+              A sketch of some scenarios that were observed in our interviews
+              and context study.
+            </Typography>
           </Grid>
         </Grid>
 
@@ -168,21 +189,30 @@ export default function PackWithUs() {
             <Typography variant="h4">Ideation</Typography>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography component="span">
-              We began by individually sketching a general layout for our app
-              that we branded as Pura. Pura would allow users to view
-              information about their local bodies of water before fishing or
-              harvesting.
+            <Typography>
+              Based on our research, our team came up with different ways
+              optimize aspects of a traveler's experience. Our team produced
+              over 30 distinct ideas before narrowing it down. Ideas ranged from
+              robots for carrying luggage to scannable wristbands for faster
+              screening.
               <br />
               <br />
-              Each member's sketch was to implement the following features:
-              <ul>
-                <li>Accessing information about water quality levels.</li>
-                <li>Community feedback about a location.</li>
-                <li>Reporting information to an environmental agency.</li>
-              </ul>
-              Ideas from our sketches were consolidated into the following image
-              and used to guide our mid-fidelity design:
+              <strong>Narrowing Down</strong>
+              <br />
+              Something our group had to keep in mind was that our design idea
+              had to{" "}
+              <strong>
+                be feasible within the context of our real or fictional
+                organization
+              </strong>
+              . While robots or built structures can be an interesting
+              implementation in airports, national safety guidelines and
+              exorbitant costs make them an unreasonable choice.
+              <br />
+              <br />
+              <strong>Final Selection</strong>
+              <br />
+              lol
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -192,6 +222,10 @@ export default function PackWithUs() {
               width={2586 / 3}
               height={1677 / 3}
             />
+            <Typography variant="caption">
+              A few ideas our group bounced around that I tried to visualize
+              through sketches.
+            </Typography>
           </Grid>
         </Grid>
 
@@ -225,7 +259,7 @@ export default function PackWithUs() {
 
         <Grid container item rowSpacing={4}>
           <Grid item xs={12}>
-            <Typography variant="h4">Voice AI Design</Typography>
+            <Typography variant="h4">Voice AI Flow</Typography>
           </Grid>
           <Grid item xs={12}>
             <Typography gutterBottom>
