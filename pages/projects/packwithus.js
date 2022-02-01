@@ -28,7 +28,7 @@ export default function PackWithUs() {
           <strong>Pack With Us</strong>
         </Typography>
         <Typography variant="body2">
-          A multi-touchpoint service design that relies on AI to streamline
+          A multi-touchpoint service design that incorporates AI to streamline
           flight preparation.
         </Typography>
       </Box>
@@ -42,7 +42,7 @@ export default function PackWithUs() {
         }}
       >
         <Image
-          src="/images/pura/pura_banner.png"
+          src="/images/packwithus/pack_banner.png"
           width="3000px"
           height="900px"
         />
@@ -71,8 +71,8 @@ export default function PackWithUs() {
               <br />
               <br />
               Our group investigated negatives experiences that occur in
-              airports, and thus developed our experience design in the context
-              of Expedia's existing services.
+              airports and developed our experience design in the context of
+              Expedia's existing services.
             </Typography>
           </Grid>
         </Grid>
@@ -85,12 +85,15 @@ export default function PackWithUs() {
             <Typography gutterBottom>
               <strong>Research</strong>
               <br />
-              idk
+              I helped in planning the questions for our user interviews and
+              conducted surveys as part of our contextual inquiry process. I led
+              the data analysis process that was integral in consolidating our
+              team's findings and identifying key insights.
               <br />
               <br />
-              <strong>Design</strong>
-              <br />
-              idk
+              <strong>Project Coordination</strong>
+              <br />I set meeting agendas and mapped project goals to ensure our
+              team was reaching important development milestones.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -150,11 +153,11 @@ export default function PackWithUs() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography component="span">
-              From our research, we concluded that preparing for a flight is
-              still an anxiety-inducing experience for infrequent and frequent
-              travelers alike. In addition, flight-booking agencies are largely
-              uninvolved with flyers after seats are purchased, further
-              compounding issues of unpreparedness. Most importantly,{" "}
+              From our research, we concluded that preparing for a flight is an
+              anxiety-inducing experience for infrequent and frequent travelers
+              alike. In addition, flight-booking agencies are largely uninvolved
+              with flyers after seats are purchased, further compounding issues
+              of unpreparedness. Most importantly,{" "}
               <strong>
                 travelers often act independently, even when it may impede them
                 from getting help.
@@ -164,9 +167,9 @@ export default function PackWithUs() {
               Altogether, our team decided that these insights pointed towards
               an overall need for a resource of centralized information which:
               <ul>
-                <li>Emphasizes a sense of autonomy for each user.</li>
                 <li>Bridges knowledge gaps for different kinds of users.</li>
                 <li>Understands priorities of an individual user.</li>
+                <li>Emphasizes a sense of autonomy for each user.</li>
               </ul>
             </Typography>
           </Grid>
@@ -189,21 +192,21 @@ export default function PackWithUs() {
             <Typography variant="h4">Ideation</Typography>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography>
-              Based on our research, our team came up with different ways
-              optimize aspects of a traveler's experience. Our team produced
-              over 30 distinct ideas before narrowing it down. Ideas ranged from
+            <Typography component="span">
+              Based on our research, our team came up with different ways to
+              optimize a traveler's experience before, during, or after the
+              airport. Our team produced over 30 distinct ideas ranging from
               robots for carrying luggage to scannable wristbands for faster
               screening.
               <br />
               <br />
-              <strong>Narrowing Down</strong>
+              <strong>Limitations</strong>
               <br />
               Something our group had to keep in mind was that our design idea
               had to{" "}
               <strong>
-                be feasible within the context of our real or fictional
-                organization
+                be feasible within the context of our organization and
+                environment
               </strong>
               . While robots or built structures can be an interesting
               implementation in airports, national safety guidelines and
@@ -212,7 +215,22 @@ export default function PackWithUs() {
               <br />
               <strong>Final Selection</strong>
               <br />
-              lol
+              Our selected idea was an amalgamation of three interconnected
+              experience touchpoints:
+              <ol>
+                <li>
+                  Web survey to understand the user's needs after they book
+                  their flight.
+                </li>
+                <li>
+                  Curated packing list based on the user's trip itinerary and
+                  survey feedback.
+                </li>
+                <li>
+                  Mobile voice AI that can responsively provide information
+                  on-the-go.
+                </li>
+              </ol>
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -231,15 +249,23 @@ export default function PackWithUs() {
 
         <Grid container item rowSpacing={4}>
           <Grid item xs={12}>
-            <Typography variant="h4">Journey Mapping</Typography>
+            <Typography variant="h4">Voice AI Flow</Typography>
           </Grid>
           <Grid item xs={12}>
+            <Typography>
+              A prominent part of our service design was the integration of
+              voice AI, so our team began by drafting a potential flow for user
+              inputs and AI outputs. We then prototyped and tested this flow for
+              ease-of-use using a conversation design tool.
+              <br />
+              <br />
+            </Typography>
             <Box sx={{ textAlign: "center" }}>
               <Image
-                src="/images/packwithus/journey_map.png"
-                alt="journey map"
-                width={1557}
-                height={869}
+                src="/images/packwithus/voiceflow.png"
+                alt="Voice flow chart"
+                width={2048}
+                height={780}
               />
             </Box>
           </Grid>
@@ -250,91 +276,49 @@ export default function PackWithUs() {
           <Box sx={{ textAlign: "center" }}>
             <Image
               src="/images/packwithus/userflow.svg"
-              alt="Information flow chart"
+              alt="User flow chart"
               width={1000}
               height={500}
             />
           </Box>
         </Grid>
 
-        <Grid container item rowSpacing={4}>
-          <Grid item xs={12}>
-            <Typography variant="h4">Voice AI Flow</Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography gutterBottom>
-              <strong>Feature: Hazard Dictionary</strong>
-              <br />
-              During the hackathon, we were able to receive feedback on our
-              design from industry professionals that volunteered as mentors. A
-              feature that was not present in our sketches was a{" "}
-              <strong>hazard dictionary</strong> that could define harmful
-              pollutants present in a body of water. This would allow users to
-              learn more about pollutants in their environment and health
-              detriments from them.
-              <br />
-              <br />
-            </Typography>
-          </Grid>
-        </Grid>
-
         <Grid container item columnSpacing={8} rowSpacing={4}>
           <Grid item xs={12}>
             <Typography variant="h4">Final Design</Typography>
           </Grid>
-          <Grid item xs={12} md={6}>
-            <Typography gutterBottom>
-              <strong>Consistent color palette and logo design.</strong>
-              <br />
-              Our overall aesthetic was inspired by nautical elements. In our
-              mid-fidelity design, we emphasized gradients and waves to create
-              distinctive visuals. On reevaluation, we considered these
-              stylistic choices as roadblocks to establishing a clear visual
-              hierarchy.
-              <br />
-              <br />
-              In our final design, we implemented a discrete color palette that
-              allowed for us to build distinct visuals through other elements of
-              the page. The logo was overhauled into a buoy which broke up the
-              monotony of our all-blue landing screens.
-            </Typography>
-          </Grid>
-          <Grid item xs={12} md={6}>
-            <Typography gutterBottom>
-              <strong>Edge case addressing unknown information.</strong>
-              <br />
-              Previously, we labeled locations as either "safe" or "unsafe" in
-              regards to its water quality. However, we wanted to make it
-              apparent when information was stale or unavailable, which was a
-              choice unlisted in our initial design.
-              <br />
-              <br />
-              <strong>Stronger focus on a card-based style.</strong>
-              <br />
-              Our users' main interactions start from their map screen. We
-              thought the use of cards, which are seen when users tap on a
-              location, provide a seamless transition of information. Therefore,
-              we accentuated the use of cards further through the aesthetics of
-              our self-reporting system.
-              <br />
-            </Typography>
+
+          <Grid item xs={12}>
+            <Box sx={{ textAlign: "center" }}>
+              <Image
+                src="/images/packwithus/webscreens.png"
+                alt="Website screens"
+                width={2317}
+                height={2982}
+              />
+            </Box>
           </Grid>
 
           <Grid item xs={12}>
-            <Typography>
-              <strong>Landing, Login, Sign-Up Screens</strong>
-            </Typography>
-            {[1, 2, 3].map((num) => {
-              return (
-                <Image
-                  key={num}
-                  src={"/images/pura/hifi_" + num + ".png"}
-                  alt="High-fidelity screen"
-                  width={384 / 2}
-                  height={773 / 2}
-                />
-              );
-            })}
+            <Box sx={{ textAlign: "center" }}>
+              <Image
+                src="/images/packwithus/designsystem.png"
+                alt="Color and typography system"
+                width={1344 / 2}
+                height={538 / 2}
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Box sx={{ textAlign: "center" }}>
+              <Image
+                src="/images/packwithus/mobilescreens.png"
+                alt="Chatbot and mobile screens"
+                width={2317}
+                height={3345}
+              />
+            </Box>
           </Grid>
         </Grid>
       </Grid>
