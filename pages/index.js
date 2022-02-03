@@ -4,8 +4,6 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import ProjectCard from "../components/ProjectCard";
 import Grid from "@mui/material/Grid";
-import VolumeUpIcon from "@mui/icons-material/VolumeUp";
-import IconButton from "@mui/material/IconButton";
 
 export default function Index() {
   return (
@@ -19,27 +17,27 @@ export default function Index() {
         >
           Kenny Nguyen
           <br />
-          /ˈkɛni ŋwiəŋ˧˨/{" "}
-          <IconButton color="inherit">
-            <VolumeUpIcon />
-          </IconButton>
+          /ˈkɛni ŋwiəŋ˧˨/
           <br />
           <em>noun</em>
           <br />
           <ol>
-            <li>a seattle-based product designer + frontend engineer</li>
-            <li>a curator of digital experiences</li>
+            <li>seattle-based product designer + frontend engineer</li>
+            <li>curator of digital experiences</li>
           </ol>
         </Typography>
       </Box>
       <Grid container spacing={4}>
-        <ProjectCard
-          image="/images/vsrs_splash.png"
-          title="VSRS Website Redesign"
-          text="Redesign of a research website for clarity and stronger identity."
-          tags="UI/UX, Web Design, UX Research"
-          link="/projects/vsrs"
-        />
+        <Box sx={{ display: "none" }}>
+          <ProjectCard
+            image="/images/vsrs_splash.png"
+            title="VSRS Website Redesign"
+            text="Redesign of a research website for clarity and stronger identity."
+            tags="UI/UX, Web Design, UX Research"
+            link="/projects/vsrs"
+          />
+        </Box>
+
         <ProjectCard
           image="/images/pura_splash.png"
           title="Pura"
@@ -54,13 +52,15 @@ export default function Index() {
           tags="Service Design, Web Design, UX Research"
           link="/projects/packwithus"
         />
-        <ProjectCard
-          image="/images/collegedemo_splash.png"
-          title="Demographics of Washington Universities"
-          text="Infographic of racial and gender diversity refined through user research."
-          tags="Information Design, Data Science, UX Research"
-          link="/"
-        />
+        <Box sx={{ display: "none" }}>
+          <ProjectCard
+            image="/images/collegedemo_splash.png"
+            title="Demographics of Washington Universities"
+            text="Infographic of racial and gender diversity refined through user research."
+            tags="Information Design, Data Science, UX Research"
+            link="/"
+          />
+        </Box>
       </Grid>
     </Layout>
   );
