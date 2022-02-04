@@ -227,11 +227,13 @@ export default function Pura() {
               pollutants present in a body of water. This would allow users to
               learn more about pollutants in their environment and health
               detriments from them.
-              <br />
-              <br />
             </Typography>
+          </Grid>
+          <Grid item xs={12}>
             <Typography gutterBottom>
               <strong>Landing, Login, Sign-Up Screens</strong>
+              <br />
+              <br />
             </Typography>
             {[1, 2, 3].map((num) => {
               return (
@@ -239,15 +241,18 @@ export default function Pura() {
                   key={num}
                   src={"/images/pura/midfi_" + num + ".png"}
                   alt="Mid-fidelity screen"
-                  width={395 / 2.5}
-                  height={687 / 2.5}
+                  width={395 / 2}
+                  height={687 / 2}
                 />
               );
             })}
-            <br />
-            <br />
+          </Grid>
+
+          <Grid item xs={12}>
             <Typography gutterBottom>
               <strong>Map, Comment Screens</strong>
+              <br />
+              <br />
             </Typography>
             {[4, 5, 6].map((num) => {
               return (
@@ -255,15 +260,18 @@ export default function Pura() {
                   key={num}
                   src={"/images/pura/midfi_" + num + ".png"}
                   alt="Mid-fidelity screen"
-                  width={395 / 2.5}
-                  height={687 / 2.5}
+                  width={395 / 2}
+                  height={687 / 2}
                 />
               );
             })}
-            <br />
-            <br />
+          </Grid>
+
+          <Grid item xs={12}>
             <Typography gutterBottom>
               <strong>Hazard Dictionary, Report Screens</strong>
+              <br />
+              <br />
             </Typography>
             {[7, 8, 9, 10].map((num) => {
               return (
@@ -271,8 +279,8 @@ export default function Pura() {
                   key={num}
                   src={"/images/pura/midfi_" + num + ".png"}
                   alt="Mid-fidelity screen"
-                  width={395 / 2.5}
-                  height={687 / 2.5}
+                  width={395 / 2}
+                  height={687 / 2}
                 />
               );
             })}
@@ -324,6 +332,8 @@ export default function Pura() {
           <Grid item xs={12}>
             <Typography>
               <strong>Landing, Login, Sign-Up Screens</strong>
+              <br />
+              <br />
             </Typography>
             {[1, 2, 3].map((num) => {
               return (
@@ -341,6 +351,8 @@ export default function Pura() {
           <Grid item xs={12}>
             <Typography gutterBottom>
               <strong>Map, Comment Screens</strong>
+              <br />
+              <br />
             </Typography>
             {[4, 5, 6].map((num) => {
               return (
@@ -358,6 +370,8 @@ export default function Pura() {
           <Grid item xs={12}>
             <Typography gutterBottom>
               <strong>Hazard Dictionary, Report Screens</strong>
+              <br />
+              <br />
             </Typography>
             {[7, 8, 9, 10, 11].map((num) => {
               return (
