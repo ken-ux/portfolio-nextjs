@@ -26,7 +26,7 @@ export default function Vsrs() {
           <strong>VSRS Website Redesign</strong>
         </Typography>
         <Typography variant="body2">
-          A redesign of the Visualization Studies Research Studio's website
+          A redesign of the Visualization Studies Research Studio&apos;s website
           based in stakeholder interviews and user research.
         </Typography>
       </Box>
@@ -43,6 +43,7 @@ export default function Vsrs() {
           src="/images/pura/pura_banner.png"
           width="3000px"
           height="900px"
+          alt="project banner"
         />
       </Box>
 
@@ -62,8 +63,8 @@ export default function Vsrs() {
           <Grid item xs={12}>
             <Typography>
               Our team was tasked in redesigning a website to align with typical
-              standards for a research-based lab/studio while emphasizing its core
-              focus in visualization studies.
+              standards for a research-based lab/studio while emphasizing its
+              core focus in visualization studies.
             </Typography>
           </Grid>
         </Grid>
@@ -76,24 +77,14 @@ export default function Vsrs() {
             <Typography gutterBottom>
               <strong>Research</strong>
               <br />
-              I facilitated the ideation process to focus the vision of our app.
-              I also onboarded the team in using Figma, such as handling frames
-              and interactions. Overall, I coordinated how we went about
-              creating our app from idea to prototype.
+              Competitive analysis, stakeholder interview, heuristic evaluation
+              (Neilsen&apos;s principles). Primary researcher/facilitator for
+              affinity mapping
               <br />
               <br />
-              <strong>Wireframing, Design System,</strong>
-              <br />I handled UX writing for the text descriptions included in
-              our hazard information and reporting screens. This included any
-              buttons or labels, as well as ensuring consistent copy across
-              texts.
+              <strong>Design System and Iteration</strong>
               <br />
-              <br />
-              <strong>Sketching, Prototyping, and Final Iteration</strong>
-              <br />I sketched the initial layout for our app. I also
-              contributed to interactive prototyping for the mid-fidelity
-              design. In addition, I independently iterated on our mid-fidelity
-              design after the hackathon to create a high-fidelity version.
+              Wireframing, Typography system, card iteration, final design.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -126,7 +117,8 @@ export default function Vsrs() {
               We started the ideation process by writing down focus statements
               exploring issues of accessibility for people of color, low-income,
               and disabled folks. The list was pared down based on originality
-              and feasibility for development within the hackathon's timeframe.
+              and feasibility for development within the hackathon&apos;s
+              timeframe.
               <br />
               <br />
               Our chosen idea was based on the cultural influence of coastal
@@ -149,7 +141,7 @@ export default function Vsrs() {
           <Grid item xs={12} md={6}>
             <Typography variant="h5">
               <em>
-                "My focus is{" "}
+                &quot;My focus is{" "}
                 <span style={{ color: "green", fontWeight: "bold" }}>
                   centralized information
                 </span>{" "}
@@ -160,7 +152,7 @@ export default function Vsrs() {
                 <span style={{ color: "red", fontWeight: "bold" }}>
                   harvest and fish safely
                 </span>
-                ."
+                .&quot;
               </em>
             </Typography>
           </Grid>
@@ -168,15 +160,31 @@ export default function Vsrs() {
 
         <Grid item>
           <Typography variant="h4">Affinity Mapping, Mood Board</Typography>
-          <Typography>I used a mood board.</Typography>
+          <Typography>Keywords</Typography>
           <Box sx={{ textAlign: "center" }}>
             <Image
               src="/images/vsrs/moodboard.png"
               alt="Moodboard"
-              width={1920}
-              height={1571}
+              width={2022}
+              height={1449}
             />
           </Box>
+        </Grid>
+
+        <Grid container item rowSpacing={4}>
+          <Grid item xs={12}>
+            <Typography variant="h4">Information Architecture</Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Box sx={{ textAlign: "center" }}>
+              <Image
+                src="/images/vsrs/info_arch.svg"
+                alt="Information architecture"
+                width={700}
+                height={600}
+              />
+            </Box>
+          </Grid>
         </Grid>
 
         <Grid container item rowSpacing={4} columnSpacing={4}>
@@ -198,13 +206,60 @@ export default function Vsrs() {
               <br />
             </Typography>
             <Box sx={{ textAlign: "center" }}>
+              <Image
+                src="/images/vsrs/wireframe.png"
+                alt="Wireframe of each website page"
+                width={3840 / 2}
+                height={3047 / 2}
+              />
+            </Box>
+          </Grid>
+        </Grid>
+
+        <Grid container item rowSpacing={4} columnSpacing={8}>
+          <Grid item xs={12}>
+            <Typography variant="h4">Iterations</Typography>
+          </Grid>
+          <Grid item xs={12} md={4}>
+            <Typography>
+              <strong>Card Variant 1</strong>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={8}>
             <Image
-              src="/images/vsrs/wireframe.png"
-              alt="Wireframe of each website page"
-              width={3840/2}
-              height={3047/2}
+              src="/images/vsrs/card_var_1.png"
+              alt="Card variant 1"
+              width={1202}
+              height={709}
             />
-          </Box>
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <Typography>
+              <strong>Card Variant 2</strong>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={8}>
+            <Image
+              src="/images/vsrs/card_var_2.png"
+              alt="Card variant 2"
+              width={1255}
+              height={495}
+            />
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <Typography>
+              <strong>Card Variant 3</strong>
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={8}>
+            <Image
+              src="/images/vsrs/card_var_3.png"
+              alt="Card variant 3"
+              width={729 / 2}
+              height={763 / 2}
+            />
           </Grid>
         </Grid>
 
@@ -233,15 +288,15 @@ export default function Vsrs() {
             <Typography gutterBottom>
               <strong>Edge case addressing unknown information.</strong>
               <br />
-              Previously, we labeled locations as either "safe" or "unsafe" in
-              regards to its water quality. However, we wanted to make it
-              apparent when information was stale or unavailable, which was a
-              choice unlisted in our initial design.
+              Previously, we labeled locations as either &quot;safe&quot; or
+              &quot;unsafe&quot; in regards to its water quality. However, we
+              wanted to make it apparent when information was stale or
+              unavailable, which was a choice unlisted in our initial design.
               <br />
               <br />
               <strong>Stronger focus on a card-based style.</strong>
               <br />
-              Our users' main interactions start from their map screen. We
+              Our users&apos; main interactions start from their map screen. We
               thought the use of cards, which are seen when users tap on a
               location, provide a seamless transition of information. Therefore,
               we accentuated the use of cards further through the aesthetics of
@@ -251,84 +306,117 @@ export default function Vsrs() {
           </Grid>
 
           <Grid item xs={12}>
-            <Typography>
-              <strong>Landing, Login, Sign-Up Screens</strong>
+            <Typography variant="h5">
+              <strong>Home</strong>
             </Typography>
-            {[1, 2, 3].map((num) => {
-              return (
-                <Image
-                  key={num}
-                  src={"/images/pura/hifi_" + num + ".png"}
-                  alt="High-fidelity screen"
-                  width={384 / 2}
-                  height={773 / 2}
-                />
-              );
-            })}
           </Grid>
 
-          <Grid item xs={12}>
-            <Typography gutterBottom>
-              <strong>Map, Comment Screens</strong>
-            </Typography>
-            {[4, 5, 6].map((num) => {
-              return (
-                <Image
-                  key={num}
-                  src={"/images/pura/hifi_" + num + ".png"}
-                  alt="High-fidelity screen"
-                  width={384 / 2}
-                  height={773 / 2}
-                />
-              );
-            })}
-          </Grid>
-
-          <Grid item xs={12}>
-            <Typography gutterBottom>
-              <strong>Hazard Dictionary, Report Screens</strong>
-            </Typography>
-            {[7, 8, 9, 10, 11].map((num) => {
-              return (
-                <Image
-                  key={num}
-                  src={"/images/pura/hifi_" + num + ".png"}
-                  alt="High-fidelity screen"
-                  width={384 / 2}
-                  height={773 / 2}
-                />
-              );
-            })}
-          </Grid>
-        </Grid>
-
-        <Grid container item xs={12} rowSpacing={4}>
-          <Grid item xs={12}>
-            <Typography variant="h4">Reflection</Typography>
-          </Grid>
-          <Grid item xs={12}>
-            <Typography>
-              This project challenged me and my teammates immensely. Not only
-              was this each of our members' first hackathon, it was our first
-              time applying a formal design process and methodology. It was a
-              rich learning experience that tested our ability to think
-              dynamically, work systematically, and execute a clear vision. And
-              it paid off! We won the Best Impact award for the mid-fidelity
-              design we submitted.
-              <br />
-              <br />
-            </Typography>
-            <Box sx={{ textAlign: "center" }}>
+          <Grid item xs={12} md={8}>
+            <Box sx={{ border: "1px solid lightgrey" }}>
               <Image
-                src="/images/pura/hackathon.jpg"
-                width={1024 / 2}
-                height={681 / 2}
-                alt="Team holding up award certificates"
+                src="/images/vsrs/rd_home.png"
+                alt="Redesigned home page"
+                width={1512}
+                height={2478}
               />
-              <Typography variant="body2">
-                Left to Right: Bely, Lauren, me, Gabrielle.
-              </Typography>
             </Box>
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <Typography>Home Rationale</Typography>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Typography variant="h5">
+              <strong>About</strong>
+            </Typography>
+          </Grid>
+
+          <Grid item xs={12} md={8}>
+            <Box sx={{ border: "1px solid lightgrey" }}>
+              <Image
+                src="/images/vsrs/rd_about.png"
+                alt="New about page"
+                width={1512}
+                height={1155}
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <Typography>About Rationale</Typography>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Typography variant="h5">
+              <strong>Projects</strong>
+            </Typography>
+            <br />
+            <Typography>Projects rationale</Typography>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Box sx={{ border: "1px solid lightgrey" }}>
+              <Image
+                src="/images/vsrs/rd_project.png"
+                alt="Redesigned projects page"
+                width={1512}
+                height={1334}
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={6}>
+            <Box sx={{ border: "1px solid lightgrey" }}>
+              <Image
+                src="/images/vsrs/rd_project_detail.png"
+                alt="Redesigned individual project page"
+                width={1512}
+                height={2016}
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Typography variant="h5">
+              <strong>Publications</strong>
+            </Typography>
+          </Grid>
+
+          <Grid item xs={12} md={8}>
+            <Box sx={{ border: "1px solid lightgrey" }}>
+              <Image
+                src="/images/vsrs/rd_publications.png"
+                alt="Redesigned publications page"
+                width={1512}
+                height={2289}
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <Typography>Publications Rationale</Typography>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Typography variant="h5">
+              <strong>People</strong>
+            </Typography>
+          </Grid>
+
+          <Grid item xs={12} md={8}>
+            <Box sx={{ border: "1px solid lightgrey" }}>
+              <Image
+                src="/images/vsrs/rd_people.png"
+                alt="Redesigned people page"
+                width={1512}
+                height={1563}
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12} md={4}>
+            <Typography>People Rationale</Typography>
           </Grid>
         </Grid>
       </Grid>
