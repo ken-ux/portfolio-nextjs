@@ -22,7 +22,7 @@ export default function About() {
       >
         <Box sx={{ mb: 4, maxWidth: 600 }}>
           <Typography variant="h4" component="h1" gutterBottom>
-            Hi, I'm Kenny. ☺️
+            Hi, I&apos;m Kenny. ☺️
           </Typography>
           <Typography>
             I am a product designer that occasionally moonlights as a frontend
@@ -36,7 +36,7 @@ export default function About() {
           <br />
           <br />
           <Typography variant="h4" component="h2" gutterBottom>
-            And here's my story.
+            And here&apos;s my story.
           </Typography>
           <Typography gutterBottom>
             I am a first-generation Vietnamese-American raised around South
@@ -48,8 +48,8 @@ export default function About() {
             own voice.
             <br />
             <br />
-            Contrary to some in my field, I didn't start off wanting to be a
-            designer. I entered university as a pre-med student, eventually
+            Contrary to some in my field, I didn&apos;t start off wanting to be
+            a designer. I entered university as a pre-med student, eventually
             earning a dual degree in Biology and Public Health. However, my
             younger-self dreamed of making a career that encapsulated
             creativity, self-expression, and storytelling. So, I made the
@@ -63,13 +63,13 @@ export default function About() {
             methodology.
             <br />
             <br />
-            And that's where I'm at today: A product designer who was motivated
-            enough to take a few steps back so they could begin stepping in the
-            right direction.
+            And that&apos;s where I&apos;m at today: A product designer who was
+            motivated enough to take a few steps back so they could begin
+            stepping in the right direction.
           </Typography>
         </Box>
         <Box>
-          <Typography variant="h6">Let's connect!</Typography>
+          <Typography variant="h6">Let&apos;s connect!</Typography>
           <IconButton
             sx={{
               color: "white",

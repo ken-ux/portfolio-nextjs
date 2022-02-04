@@ -45,6 +45,7 @@ export default function PackWithUs() {
           src="/images/packwithus/pack_banner.png"
           width="3000px"
           height="900px"
+          alt="project banner"
         />
       </Box>
 
@@ -72,7 +73,7 @@ export default function PackWithUs() {
               <br />
               Our group investigated negatives experiences that occur in
               airports and developed our experience design in the context of
-              Expedia's existing services.
+              Expedia&apos;s existing services.
             </Typography>
           </Grid>
         </Grid>
@@ -88,7 +89,7 @@ export default function PackWithUs() {
               I helped in planning the questions for our user interviews and
               conducted surveys as part of our contextual inquiry process. I led
               the data analysis process that was integral in consolidating our
-              team's findings and identifying key insights.
+              team&apos;s findings and identifying key insights.
               <br />
               <br />
               <strong>Project Coordination</strong>
@@ -134,7 +135,7 @@ export default function PackWithUs() {
               <br />
               Interviews were carried out in 1-hour virtual sessions with a set
               of questions to guide the conversation. However, we chose a
-              semi-structured approach to allow flexibility for travelers'
+              semi-structured approach to allow flexibility for travelers&apos;
               responses.
               <br />
               <br />
@@ -194,7 +195,7 @@ export default function PackWithUs() {
           <Grid item xs={12} md={6}>
             <Typography component="span">
               Based on our research, our team came up with different ways to
-              optimize a traveler's experience before, during, or after the
+              optimize a traveler&apos;s experience before, during, or after the
               airport. Our team produced over 30 distinct ideas ranging from
               robots for carrying luggage to scannable wristbands for faster
               screening.
@@ -219,11 +220,11 @@ export default function PackWithUs() {
               experience touchpoints:
               <ol>
                 <li>
-                  Web survey to understand the user's needs after they book
+                  Web survey to understand the user&apos;s needs after they book
                   their flight.
                 </li>
                 <li>
-                  Curated packing list based on the user's trip itinerary and
+                  Curated packing list based on the user&apos;s trip itinerary and
                   survey feedback.
                 </li>
                 <li>

@@ -44,7 +44,7 @@ const ResponsiveAppBar = ({ home }) => {
                 },
               }}
             >
-              <Image src="/icon.svg" height="50px" width="50px" />
+              <Image src="/icon.svg" height="50px" width="50px" alt="logo" />
             </Box>
           </Box>
 

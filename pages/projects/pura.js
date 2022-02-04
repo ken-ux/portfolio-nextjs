@@ -43,6 +43,7 @@ export default function Pura() {
           src="/images/pura/pura_banner.png"
           width="3000px"
           height="900px"
+          alt="project banner"
         />
       </Box>
 
@@ -126,7 +127,8 @@ export default function Pura() {
               We started the ideation process by writing down focus statements
               exploring issues of accessibility for people of color, low-income,
               and disabled folks. The list was pared down based on originality
-              and feasibility for development within the hackathon's timeframe.
+              and feasibility for development within the hackathon&apos;s
+              timeframe.
               <br />
               <br />
               Our chosen idea was based on the cultural influence of coastal
@@ -149,7 +151,7 @@ export default function Pura() {
           <Grid item xs={12} md={6}>
             <Typography variant="h5">
               <em>
-                "My focus is{" "}
+                &quot;My focus is{" "}
                 <span style={{ color: "green", fontWeight: "bold" }}>
                   centralized information
                 </span>{" "}
@@ -160,7 +162,7 @@ export default function Pura() {
                 <span style={{ color: "red", fontWeight: "bold" }}>
                   harvest and fish safely
                 </span>
-                ."
+                .&quot;
               </em>
             </Typography>
           </Grid>
@@ -190,7 +192,7 @@ export default function Pura() {
               harvesting.
               <br />
               <br />
-              Each member's sketch was to implement the following features:
+              Each member&apos;s sketch was to implement the following features:
               <ul>
                 <li>Accessing information about water quality levels.</li>
                 <li>Community feedback about a location.</li>
@@ -302,15 +304,15 @@ export default function Pura() {
             <Typography gutterBottom>
               <strong>Edge case addressing unknown information.</strong>
               <br />
-              Previously, we labeled locations as either "safe" or "unsafe" in
-              regards to its water quality. However, we wanted to make it
-              apparent when information was stale or unavailable, which was a
-              choice unlisted in our initial design.
+              Previously, we labeled locations as either &quot;safe&quot; or
+              &quot;unsafe&quot; in regards to its water quality. However, we
+              wanted to make it apparent when information was stale or
+              unavailable, which was a choice unlisted in our initial design.
               <br />
               <br />
               <strong>Stronger focus on a card-based style.</strong>
               <br />
-              Our users' main interactions start from their map screen. We
+              Our users&apos; main interactions start from their map screen. We
               thought the use of cards, which are seen when users tap on a
               location, provide a seamless transition of information. Therefore,
               we accentuated the use of cards further through the aesthetics of
@@ -378,9 +380,9 @@ export default function Pura() {
           <Grid item xs={12}>
             <Typography>
               This project challenged me and my teammates immensely. Not only
-              was this each of our members' first hackathon, it was our first
-              time applying a formal design process and methodology. It was a
-              rich learning experience that tested our ability to think
+              was this each of our members&apos; first hackathon, it was our
+              first time applying a formal design process and methodology. It
+              was a rich learning experience that tested our ability to think
               dynamically, work systematically, and execute a clear vision. And
               it paid off! We won the Best Impact award for the mid-fidelity
               design we submitted.
