@@ -40,7 +40,7 @@ export default function Vsrs() {
         }}
       >
         <Image
-          src="/images/pura/pura_banner.png"
+          src="/images/vsrs/vsrs_banner.png"
           width="3000px"
           height="900px"
           alt="project banner"
@@ -114,6 +114,8 @@ export default function Vsrs() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography>
+              <strong>Stakeholder Interviews</strong>
+              <br />
               We started the ideation process by writing down focus statements
               exploring issues of accessibility for people of color, low-income,
               and disabled folks. The list was pared down based on originality
@@ -121,21 +123,9 @@ export default function Vsrs() {
               timeframe.
               <br />
               <br />
-              Our chosen idea was based on the cultural influence of coastal
-              indigenous communities in the Pacific Northwest, where our team
-              and the hackathon was based.
+              <strong>Competitive Analysis</strong>
               <br />
-              <br />
-              <strong>Artificial Need vs. Fundamental Need</strong>
-              <br />
-              An core part of our focus statements was demonstrating a clear{" "}
-              <span style={{ color: "green", fontWeight: "bold" }}>method</span>
-              ,{" "}
-              <span style={{ color: "blue", fontWeight: "bold" }}>people</span>,
-              and <span style={{ color: "red", fontWeight: "bold" }}>need</span>
-              . In doing so, we believed it would guide us towards
-              well-articulated ideas that addressed fundamental needs rather
-              than surface-level desires.
+              There is no competition
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -159,8 +149,8 @@ export default function Vsrs() {
         </Grid>
 
         <Grid item>
-          <Typography variant="h4">Affinity Mapping, Mood Board</Typography>
-          <Typography>Keywords</Typography>
+          <Typography variant="h4">Mood Board</Typography>
+          <Typography>Keywords: Semiotics</Typography>
           <Box sx={{ textAlign: "center" }}>
             <Image
               src="/images/vsrs/moodboard.png"
@@ -180,8 +170,8 @@ export default function Vsrs() {
               <Image
                 src="/images/vsrs/info_arch.svg"
                 alt="Information architecture"
-                width={700}
-                height={600}
+                width={700 / 1.1}
+                height={600 / 1.1}
               />
             </Box>
           </Grid>
@@ -195,15 +185,7 @@ export default function Vsrs() {
             <Typography gutterBottom>
               <strong>Feature: Hazard Dictionary</strong>
               <br />
-              During the hackathon, we were able to receive feedback on our
-              design from industry professionals that volunteered as mentors. A
-              feature that was not present in our sketches was a{" "}
-              <strong>hazard dictionary</strong> that could define harmful
-              pollutants present in a body of water. This would allow users to
-              learn more about pollutants in their environment and health
-              detriments from them.
-              <br />
-              <br />
+              lol
             </Typography>
             <Box sx={{ textAlign: "center" }}>
               <Image
@@ -220,45 +202,39 @@ export default function Vsrs() {
           <Grid item xs={12}>
             <Typography variant="h4">Iterations</Typography>
           </Grid>
-          <Grid item xs={12} md={4}>
+          <Grid item xs={12} md={6}>
             <Typography>
-              <strong>Card Variant 1</strong>
+              <strong>Card Variants</strong>
             </Typography>
           </Grid>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={6}>
             <Image
-              src="/images/vsrs/card_var_1.png"
-              alt="Card variant 1"
-              width={1202}
-              height={709}
+              src="/images/vsrs/card_var.png"
+              alt="Card variants"
+              width={1454}
+              height={1928}
             />
           </Grid>
 
           <Grid item xs={12} md={4}>
             <Typography>
-              <strong>Card Variant 2</strong>
+              <strong>Homepage Iterations</strong>
             </Typography>
           </Grid>
-          <Grid item xs={12} md={8}>
+          <Grid item xs={12} md={4}>
             <Image
-              src="/images/vsrs/card_var_2.png"
-              alt="Card variant 2"
-              width={1255}
-              height={495}
+              src="/images/vsrs/home_var_1.png"
+              alt="Home page variant 1"
+              width={1512}
+              height={2264}
             />
           </Grid>
-
           <Grid item xs={12} md={4}>
-            <Typography>
-              <strong>Card Variant 3</strong>
-            </Typography>
-          </Grid>
-          <Grid item xs={12} md={8}>
             <Image
-              src="/images/vsrs/card_var_3.png"
-              alt="Card variant 3"
-              width={729 / 2}
-              height={763 / 2}
+              src="/images/vsrs/home_var_2.png"
+              alt="Home page variant 2"
+              width={1512}
+              height={2264}
             />
           </Grid>
         </Grid>
@@ -306,20 +282,29 @@ export default function Vsrs() {
           </Grid>
 
           <Grid item xs={12}>
+            <Box sx={{ textAlign: "center" }}>
+              <Image
+                src="/images/vsrs/design_system.png"
+                alt="Semantic color and typography system"
+                width={1598}
+                height={552}
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={12}>
             <Typography variant="h5">
               <strong>Home</strong>
             </Typography>
           </Grid>
 
           <Grid item xs={12} md={8}>
-            <Box sx={{ border: "1px solid lightgrey" }}>
-              <Image
-                src="/images/vsrs/rd_home.png"
-                alt="Redesigned home page"
-                width={1512}
-                height={2478}
-              />
-            </Box>
+            <Image
+              src="/images/vsrs/rd_home.png"
+              alt="Redesigned home page"
+              width={1512}
+              height={2478}
+            />
           </Grid>
 
           <Grid item xs={12} md={4}>
@@ -333,14 +318,12 @@ export default function Vsrs() {
           </Grid>
 
           <Grid item xs={12} md={8}>
-            <Box sx={{ border: "1px solid lightgrey" }}>
-              <Image
-                src="/images/vsrs/rd_about.png"
-                alt="New about page"
-                width={1512}
-                height={1155}
-              />
-            </Box>
+            <Image
+              src="/images/vsrs/rd_about.png"
+              alt="New about page"
+              width={1512}
+              height={1155}
+            />
           </Grid>
 
           <Grid item xs={12} md={4}>
@@ -356,25 +339,21 @@ export default function Vsrs() {
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <Box sx={{ border: "1px solid lightgrey" }}>
-              <Image
-                src="/images/vsrs/rd_project.png"
-                alt="Redesigned projects page"
-                width={1512}
-                height={1334}
-              />
-            </Box>
+            <Image
+              src="/images/vsrs/rd_project.png"
+              alt="Redesigned projects page"
+              width={1512}
+              height={1334}
+            />
           </Grid>
 
           <Grid item xs={12} md={6}>
-            <Box sx={{ border: "1px solid lightgrey" }}>
-              <Image
-                src="/images/vsrs/rd_project_detail.png"
-                alt="Redesigned individual project page"
-                width={1512}
-                height={2016}
-              />
-            </Box>
+            <Image
+              src="/images/vsrs/rd_project_detail.png"
+              alt="Redesigned individual project page"
+              width={1512}
+              height={2016}
+            />
           </Grid>
 
           <Grid item xs={12}>
@@ -384,14 +363,12 @@ export default function Vsrs() {
           </Grid>
 
           <Grid item xs={12} md={8}>
-            <Box sx={{ border: "1px solid lightgrey" }}>
-              <Image
-                src="/images/vsrs/rd_publications.png"
-                alt="Redesigned publications page"
-                width={1512}
-                height={2289}
-              />
-            </Box>
+            <Image
+              src="/images/vsrs/rd_publications.png"
+              alt="Redesigned publications page"
+              width={1512}
+              height={2289}
+            />
           </Grid>
 
           <Grid item xs={12} md={4}>
@@ -405,14 +382,12 @@ export default function Vsrs() {
           </Grid>
 
           <Grid item xs={12} md={8}>
-            <Box sx={{ border: "1px solid lightgrey" }}>
-              <Image
-                src="/images/vsrs/rd_people.png"
-                alt="Redesigned people page"
-                width={1512}
-                height={1563}
-              />
-            </Box>
+            <Image
+              src="/images/vsrs/rd_people.png"
+              alt="Redesigned people page"
+              width={1512}
+              height={1563}
+            />
           </Grid>
 
           <Grid item xs={12} md={4}>
