@@ -62,9 +62,11 @@ export default function Vsrs() {
           </Grid>
           <Grid item xs={12}>
             <Typography>
-              Our team was tasked in redesigning a website to align with typical
-              standards for a research-based lab/studio while emphasizing its
-              core focus in visualization studies.
+              Our team was tasked in redesigning a website for the Visualization
+              Studies Research Studio (VSRS), a studio that conducts academic
+              research into image-making. Our goal was to align this redesign
+              with established practices for showcasing research in an
+              institutional space.
             </Typography>
           </Grid>
         </Grid>
@@ -77,14 +79,13 @@ export default function Vsrs() {
             <Typography gutterBottom>
               <strong>Research</strong>
               <br />
-              Competitive analysis, stakeholder interview, heuristic evaluation
-              (Neilsen&apos;s principles). Primary researcher/facilitator for
-              affinity mapping
+              Competitive analysis, stakeholder interview, heuristic evaluation.
+              Primary researcher/facilitator for affinity mapping
               <br />
               <br />
               <strong>Design System and Iteration</strong>
               <br />
-              Wireframing, Typography system, card iteration, final design.
+              Wireframing, typography system, card iteration, final design.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -114,37 +115,55 @@ export default function Vsrs() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography>
-              <strong>Stakeholder Interviews</strong>
+              <strong>Stakeholder Interview</strong>
               <br />
-              We started the ideation process by writing down focus statements
-              exploring issues of accessibility for people of color, low-income,
-              and disabled folks. The list was pared down based on originality
-              and feasibility for development within the hackathon&apos;s
-              timeframe.
+              We began our redesign by interviewing the research studio&apos;s
+              lead to understand their vision and purpose. This helped our team
+              establish the intended audience, style guidelines, and features
+              that our client would like to have incorporated in the final
+              design.
               <br />
               <br />
               <strong>Competitive Analysis</strong>
               <br />
-              There is no competition
+              An important part of our research was understanding how similar
+              research labs structured their websites. We made an inventory of
+              10 other labs conducting research at the University of Washington
+              (such as the{" "}
+              <a href="https://tascha.uw.edu/about/">Digital Youth Lab</a>) and
+              made note of similarities in their information architecture.
+              <br />
+              <br />
+              <strong>Heuristic Evaluation/Preliminary Usability Test</strong>
+              <br />
+              We used Nielsen&apos;s principles as a framework for heuristic
+              evaluation of the website&apos;s current design. Each member
+              performed an individual evaluation then came together to compare
+              scores and discuss common painpoints in the current design.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography variant="h5">
-              <em>
-                &quot;My focus is{" "}
-                <span style={{ color: "green", fontWeight: "bold" }}>
-                  centralized information
-                </span>{" "}
-                that helps{" "}
-                <span style={{ color: "blue", fontWeight: "bold" }}>
-                  coastal communities
-                </span>{" "}
-                <span style={{ color: "red", fontWeight: "bold" }}>
-                  harvest and fish safely
-                </span>
-                .&quot;
-              </em>
+            <Box sx={{ border: "1px solid lightgray" }}>
+              <Image
+                src="/images/vsrs/old_home.png"
+                width={1080}
+                height={1299}
+                alt="Old home page design"
+              />
+            </Box>
+            <Typography variant="caption">
+              <br />
+              The original home page design.
             </Typography>
+          </Grid>
+        </Grid>
+
+        <Grid container item rowSpacing={4}>
+          <Grid item xs={12}>
+            <Typography variant="h4">Insights</Typography>
+          </Grid>
+          <Grid item xs={12}>
+            <Typography>Research</Typography>
           </Grid>
         </Grid>
 
