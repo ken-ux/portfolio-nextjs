@@ -28,15 +28,13 @@ export default function Index() {
         </Typography>
       </Box>
       <Grid container spacing={4}>
-        <Box sx={{ display: "none" }}>
-          <ProjectCard
-            image="/images/vsrs_splash.png"
-            title="VSRS Website Redesign"
-            text="Redesign of a research website for clarity and stronger identity."
-            tags="UI/UX, Web Design, UX Research"
-            link="/projects/vsrs"
-          />
-        </Box>
+        <ProjectCard
+          image="/images/vsrs_splash.png"
+          title="VSRS Website Redesign"
+          text="Redesign of a research website for clarity and stronger identity."
+          tags="UI/UX, Web Design, UX Research"
+          link="/projects/vsrs"
+        />
 
         <ProjectCard
           image="/images/pura_splash.png"
