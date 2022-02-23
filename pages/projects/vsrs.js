@@ -79,17 +79,16 @@ export default function Vsrs() {
             <Typography gutterBottom>
               <strong>Research</strong>
               <br />
-              I assisted in building the protocols for our stakeholder
-              interview, conducted an individual heuristic evaluation, and led
-              the synthesis of findings from our competitive analysis and
-              cognitive walkthroughs.
+              I helped build the protocols for our stakeholder interview,
+              conducted an individual heuristic evaluation, and led the
+              synthesis of findings from our competitive analysis and cognitive
+              walkthroughs.
               <br />
               <br />
               <strong>Wireframing, Design System, and Card Iteration</strong>
-              <br />I led the wireframing process and helped finalize the design
-              system (typography and color) for our final iteration. I developed
-              and iterated on the design for cards showcasing individual
-              research projects.
+              <br />I led the wireframing process and finalized the typography
+              and color systems in our final iteration. I developed and iterated
+              on the card designss for displaying individual research projects.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -275,10 +274,18 @@ export default function Vsrs() {
           </Grid>
           <Grid item xs={12}>
             <Typography>
-              Wireframes were made for the following pages: Home, Projects
-              (Landing), Publications, People, and Project (Detailed Page).
-              Contextual notes are present in the wireframe below which outlined
-              design justifications or points for further discussion.
+              Wireframes were made for the following pages:{" "}
+              <strong>
+                Home, Projects (Landing), Publications, People, and Project
+                (Detailed Page)
+              </strong>
+              .
+              <br />
+              <br />
+              Of note, although an &quot;About&quot; page is seen in our
+              information architecture, it was not wireframed initially.
+              Additionally, annotations can be seen here that were used for
+              explaining design decisions and initiating group discussion.
             </Typography>
           </Grid>
           <Grid item xs={12}>
@@ -326,8 +333,10 @@ export default function Vsrs() {
             <Typography component="span">
               <strong>Home Page Iterations</strong>
               <br />
-              Our team saw the home page&apos;s visual design and layout as a
-              blueprint for how other pages would be structured.
+              Our team saw the home page&apos;s design as the blueprint for the
+              site&apos;s visual identity. We went through many iterations of
+              the home page since it would be the anchor for how we designed
+              other pages.
               <br />
               <br />
               Our iterations of the home page were mainly grounded in:
@@ -362,38 +371,32 @@ export default function Vsrs() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography gutterBottom>
-              <strong>Consistent color palette and logo design.</strong>
+              <strong>Neutral color palette.</strong>
               <br />
-              Information is separated by thematic coloring and headings for
-              readability. A plain color scheme, which was a stakeholder
-              priority, created a space for colors and shapes to be the core
-              focus of the page.
+              Minimal use of colors in the website&apos;s redesign was a
+              stakeholder priority. The VSRS&apos;s research lead wanted the
+              visualizations produced or analyzed in their studies to be the
+              main focus of a page.
               <br />
               <br />
-              In our final design, we implemented a discrete color palette that
-              allowed for us to build distinct visuals through other elements of
-              the page. The logo was overhauled into a buoy which broke up the
-              monotony of our all-blue landing screens.
+              By utilizing a neutral color palette, we created a space for
+              color, shape, and form to be the driving element of each page
+              instead of the website&apos;s color scheme itself.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography gutterBottom>
-              <strong>Splitting information to save visuals.</strong>
+              <strong>Organized text content and placement.</strong>
               <br />
-              Previously, we labeled locations as either &quot;safe&quot; or
-              &quot;unsafe&quot; in regards to its water quality. However, we
-              wanted to make it apparent when information was stale or
-              unavailable, which was a choice unlisted in our initial design.
+              As a repository of past and ongoing projects, information overload
+              and crowding was prevalent. Our team was intentional in
+              structuring information on <strong>and</strong> between pages to
+              best match the flow of common user actions.
               <br />
               <br />
-              <strong>Stronger focus on a card-based style.</strong>
-              <br />
-              Our users&apos; main interactions start from their map screen. We
-              thought the use of cards, which are seen when users tap on a
-              location, provide a seamless transition of information. Therefore,
-              we accentuated the use of cards further through the aesthetics of
-              our self-reporting system.
-              <br />
+              This was salient in the design of the project pages, which had no
+              defined layout despite being a vital part of the website&apos;s
+              purpose.
             </Typography>
           </Grid>
 
@@ -490,6 +493,72 @@ export default function Vsrs() {
               width={1512}
               height={1563}
             />
+          </Grid>
+        </Grid>
+
+        <Grid container item columnSpacing={4} rowSpacing={4}>
+          <Grid item xs={12}>
+            <Typography variant="h4">Original Design</Typography>
+          </Grid>
+
+          <Grid item xs={12}>
+            <Typography>This is the original design.</Typography>
+          </Grid>
+
+          <Grid item xs={4}>
+            <Box sx={{ border: "1px solid black" }}>
+              <Image
+                src="/images/vsrs/old_home.png"
+                alt="Original home page"
+                width={1222}
+                height={1470}
+              />
+            </Box>
+            <Typography variant="caption">Home page.</Typography>
+          </Grid>
+
+          <Grid item xs={4}>
+            <Box sx={{ border: "1px solid black" }}>
+              <Image
+                src="/images/vsrs/old_project.png"
+                alt="Original projects landing"
+                width={1222}
+                height={1470}
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={4}>
+            <Box sx={{ border: "1px solid black" }}>
+              <Image
+                src="/images/vsrs/old_project_detail.png"
+                alt="Original detailed project page"
+                width={1222}
+                height={1470}
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={4}>
+            <Box sx={{ border: "1px solid black" }}>
+              <Image
+                src="/images/vsrs/old_publication.png"
+                alt="Original publications page"
+                width={1222}
+                height={1470}
+              />
+            </Box>
+          </Grid>
+
+          <Grid item xs={4}>
+            <Box sx={{ border: "1px solid black" }}>
+              <Image
+                src="/images/vsrs/old_people.png"
+                alt="Original people page"
+                width={1222}
+                height={1470}
+              />
+            </Box>
           </Grid>
         </Grid>
       </Grid>
