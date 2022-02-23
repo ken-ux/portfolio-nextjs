@@ -101,13 +101,13 @@ export default function PackWithUs() {
             <Typography>
               <strong>Team Members</strong>
               <br />
-              Ansul
+              Ansul Sinha
               <br />
-              Lily
+              Lily Hernandez
               <br />
-              Hannah
+              Hannah Chung
               <br />
-              Minjoo
+              Minjoo Kim
               <br />
               <br />
               <strong>Timeframe</strong>

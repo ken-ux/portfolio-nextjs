@@ -103,11 +103,11 @@ export default function Pura() {
             <Typography>
               <strong>Team Members</strong>
               <br />
-              Gabrielle
+              Gabrielle Isaguirre
               <br />
-              Bely
+              Bely Lor
               <br />
-              Lauren
+              Lauren Krieger
               <br />
               <br />
               <strong>Timeframe</strong>
