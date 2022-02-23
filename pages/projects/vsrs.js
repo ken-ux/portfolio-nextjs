@@ -62,11 +62,11 @@ export default function Vsrs() {
           </Grid>
           <Grid item xs={12}>
             <Typography>
-              Our team was tasked in redesigning a website for the Visualization
-              Studies Research Studio (VSRS), a studio that conducts academic
-              research into image-making. Our goal was to align this redesign
-              with established practices for showcasing research in an
-              institutional space.
+              Our team was tasked in redesigning a website for our research lab,
+              the Visualization Studies Research Studio (VSRS). Our goal was to
+              align this redesign with established practices for showcasing
+              institutional research while preserving its visual identity as a
+              hub for image-making studies.
             </Typography>
           </Grid>
         </Grid>
@@ -79,26 +79,30 @@ export default function Vsrs() {
             <Typography gutterBottom>
               <strong>Research</strong>
               <br />
-              Competitive analysis, stakeholder interview, heuristic evaluation.
-              Primary researcher/facilitator for affinity mapping
+              I assisted in building the protocols for our stakeholder
+              interview, conducted an individual heuristic evaluation, and led
+              the synthesis of findings from our competitive analysis and
+              cognitive walkthroughs.
               <br />
               <br />
-              <strong>Design System and Iteration</strong>
-              <br />
-              Wireframing, typography system, card iteration, final design.
+              <strong>Wireframing, Design System, and Card Iteration</strong>
+              <br />I led the wireframing process and helped finalize the design
+              system (typography and color) for our final iteration. I developed
+              and iterated on the design for cards showcasing individual
+              research projects.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography>
               <strong>Team Members</strong>
               <br />
-              Hannah
+              Hannah Chung
               <br />
-              Kristina
+              Kristina Te
               <br />
-              Misty
+              Misty Becker
               <br />
-              Rita
+              Rita Wu
               <br />
               <br />
               <strong>Timeframe</strong>
@@ -134,12 +138,21 @@ export default function Vsrs() {
               made note of similarities in their information architecture.
               <br />
               <br />
-              <strong>Heuristic Evaluation/Preliminary Usability Test</strong>
+              <strong>Heuristic Evaluation</strong>
               <br />
               We used Nielsen&apos;s principles as a framework for heuristic
               evaluation of the website&apos;s current design. Each member
               performed an individual evaluation then came together to compare
               scores and discuss common painpoints in the current design.
+              <br />
+              <br />
+              <strong>Preliminary Usability Test, Cognitive Walkthrough</strong>
+              <br />
+              To support our heuristic evaluation, our team also conducted
+              usability tests to see if our suspected painpoints aligned with
+              those of the target audience. This was done through cognitive
+              walkthroughs via task-based observations where participants
+              attempt to navigate the different aspects of the website.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -153,7 +166,7 @@ export default function Vsrs() {
             </Box>
             <Typography variant="caption">
               <br />
-              The original home page design.
+              The old home page design.
             </Typography>
           </Grid>
         </Grid>
@@ -163,34 +176,94 @@ export default function Vsrs() {
             <Typography variant="h4">Insights</Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography>Research</Typography>
+            <Typography component="span">
+              Based on our stakeholder interview, we gathered the following:
+              <ul>
+                <li>
+                  The <strong>intended audiences</strong> are students, research
+                  study participants, and academics who have interest in the
+                  lab&apos;s findings.
+                </li>
+                <li>
+                  The website functions as a <strong>repository</strong> and{" "}
+                  <strong>network</strong>. Projects and publications are the
+                  main focal point but there is also an emphasis on its use as a
+                  reference point for students and collaborators.
+                </li>
+                <li>
+                  <strong>
+                    Visual elements should drive the content of each page
+                  </strong>
+                  , rather than text, to emphasize the work that the VSRS does.
+                </li>
+              </ul>
+              <br />
+              Across our other research methods, our findings included:
+              <ul>
+                <li>
+                  Project categorization that is too broad may overshadow what
+                  each project realistically entails.
+                </li>
+                <li>
+                  Showcasing recent publications are necessary for understanding
+                  the direction of the lab&apos;s research.
+                </li>
+                <li>
+                  Research websites bear similarities to personal portfolios but
+                  should emphasize the collective effort of its collaborators.
+                </li>
+              </ul>
+            </Typography>
           </Grid>
-        </Grid>
-
-        <Grid item>
-          <Typography variant="h4">Mood Board</Typography>
-          <Typography>Keywords: Semiotics</Typography>
-          <Box sx={{ textAlign: "center" }}>
-            <Image
-              src="/images/vsrs/moodboard.png"
-              alt="Moodboard"
-              width={2022}
-              height={1449}
-            />
-          </Box>
         </Grid>
 
         <Grid container item rowSpacing={4}>
           <Grid item xs={12}>
-            <Typography variant="h4">Information Architecture</Typography>
+            <Typography variant="h4">Mood Board</Typography>
           </Grid>
           <Grid item xs={12}>
+            <Typography>
+              We put together a mood board to summarize some of the design
+              narratives and themes that the client described during the
+              stakeholder interview.
+              <br />
+              <br />
+              <strong>Keywords</strong>: Semiotics, CMYK, Abstract Form,
+              Editorial
+            </Typography>
+            <Box sx={{ textAlign: "center" }}>
+              <Image
+                src="/images/vsrs/moodboard.png"
+                alt="Moodboard"
+                width={2022}
+                height={1449}
+              />
+            </Box>
+          </Grid>
+        </Grid>
+
+        <Grid container item columnSpacing={8} rowSpacing={4}>
+          <Grid item xs={12}>
+            <Typography variant="h4">Information Architecture</Typography>
+          </Grid>
+          <Grid item xs={12} md={6}>
+            <Typography>
+              We constructed a sitemap to represent how information will be
+              organized and the most logical flow for where it should be
+              displayed.
+              <br />
+              <br />
+              Blue nodes represent 1st-tier information objects, green nodes are
+              2nd-tier objects, and yellow are 3rd-tier objects.
+            </Typography>
+          </Grid>
+          <Grid item xs={12} md={6}>
             <Box sx={{ textAlign: "center" }}>
               <Image
                 src="/images/vsrs/info_arch.svg"
                 alt="Information architecture"
-                width={700 / 1.1}
-                height={600 / 1.1}
+                width={700}
+                height={400}
               />
             </Box>
           </Grid>
@@ -201,11 +274,14 @@ export default function Vsrs() {
             <Typography variant="h4">Wireframes</Typography>
           </Grid>
           <Grid item xs={12}>
-            <Typography gutterBottom>
-              <strong>Feature: Hazard Dictionary</strong>
-              <br />
-              lol
+            <Typography>
+              Wireframes were made for the following pages: Home, Projects
+              (Landing), Publications, People, and Project (Detailed Page).
+              Contextual notes are present in the wireframe below which outlined
+              design justifications or points for further discussion.
             </Typography>
+          </Grid>
+          <Grid item xs={12}>
             <Box sx={{ textAlign: "center" }}>
               <Image
                 src="/images/vsrs/wireframe.png"
@@ -222,8 +298,19 @@ export default function Vsrs() {
             <Typography variant="h4">Iterations</Typography>
           </Grid>
           <Grid item xs={12} md={6}>
-            <Typography>
+            <Typography component="span">
               <strong>Card Variants</strong>
+              <br />
+              Cards were a core focus of our design that quickly points users to
+              the VSRS&apos;s projects. Our team went through a myriad of card
+              variants that explored:
+              <ul>
+                <li>Usage of space</li>
+                <li>Information availability</li>
+                <li>Visual impact</li>
+              </ul>
+              These variants evolved as we developed a unified theme for the
+              website redesign.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
@@ -236,8 +323,19 @@ export default function Vsrs() {
           </Grid>
 
           <Grid item xs={12} md={4}>
-            <Typography>
-              <strong>Homepage Iterations</strong>
+            <Typography component="span">
+              <strong>Home Page Iterations</strong>
+              <br />
+              Our team saw the home page&apos;s visual design and layout as a
+              blueprint for how other pages would be structured.
+              <br />
+              <br />
+              Our iterations of the home page were mainly grounded in:
+              <ul>
+                <li>Minimizing text</li>
+                <li>Evoking abstract imagery or visually-driven elements</li>
+                <li>Prioritizing user actions</li>
+              </ul>
             </Typography>
           </Grid>
           <Grid item xs={12} md={4}>
@@ -266,11 +364,10 @@ export default function Vsrs() {
             <Typography gutterBottom>
               <strong>Consistent color palette and logo design.</strong>
               <br />
-              Our overall aesthetic was inspired by nautical elements. In our
-              mid-fidelity design, we emphasized gradients and waves to create
-              distinctive visuals. On reevaluation, we considered these
-              stylistic choices as roadblocks to establishing a clear visual
-              hierarchy.
+              Information is separated by thematic coloring and headings for
+              readability. A plain color scheme, which was a stakeholder
+              priority, created a space for colors and shapes to be the core
+              focus of the page.
               <br />
               <br />
               In our final design, we implemented a discrete color palette that
@@ -281,7 +378,7 @@ export default function Vsrs() {
           </Grid>
           <Grid item xs={12} md={6}>
             <Typography gutterBottom>
-              <strong>Edge case addressing unknown information.</strong>
+              <strong>Splitting information to save visuals.</strong>
               <br />
               Previously, we labeled locations as either &quot;safe&quot; or
               &quot;unsafe&quot; in regards to its water quality. However, we
@@ -311,13 +408,12 @@ export default function Vsrs() {
             </Box>
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} md={6}>
             <Typography variant="h5">
               <strong>Home</strong>
+              <br />
+              <br />
             </Typography>
-          </Grid>
-
-          <Grid item xs={12} md={8}>
             <Image
               src="/images/vsrs/rd_home.png"
               alt="Redesigned home page"
@@ -326,17 +422,12 @@ export default function Vsrs() {
             />
           </Grid>
 
-          <Grid item xs={12} md={4}>
-            <Typography>Home Rationale</Typography>
-          </Grid>
-
-          <Grid item xs={12}>
+          <Grid item xs={12} md={6}>
             <Typography variant="h5">
               <strong>About</strong>
+              <br />
+              <br />
             </Typography>
-          </Grid>
-
-          <Grid item xs={12} md={8}>
             <Image
               src="/images/vsrs/rd_about.png"
               alt="New about page"
@@ -345,19 +436,12 @@ export default function Vsrs() {
             />
           </Grid>
 
-          <Grid item xs={12} md={4}>
-            <Typography>About Rationale</Typography>
-          </Grid>
-
-          <Grid item xs={12}>
-            <Typography variant="h5">
-              <strong>Projects</strong>
-            </Typography>
-            <br />
-            <Typography>Projects rationale</Typography>
-          </Grid>
-
           <Grid item xs={12} md={6}>
+            <Typography variant="h5">
+              <strong>Projects (Landing)</strong>
+              <br />
+              <br />
+            </Typography>
             <Image
               src="/images/vsrs/rd_project.png"
               alt="Redesigned projects page"
@@ -367,6 +451,11 @@ export default function Vsrs() {
           </Grid>
 
           <Grid item xs={12} md={6}>
+            <Typography variant="h5">
+              <strong>Project (Detailed Page)</strong>
+              <br />
+              <br />
+            </Typography>
             <Image
               src="/images/vsrs/rd_project_detail.png"
               alt="Redesigned individual project page"
@@ -375,13 +464,12 @@ export default function Vsrs() {
             />
           </Grid>
 
-          <Grid item xs={12}>
+          <Grid item xs={12} md={6}>
             <Typography variant="h5">
               <strong>Publications</strong>
+              <br />
+              <br />
             </Typography>
-          </Grid>
-
-          <Grid item xs={12} md={8}>
             <Image
               src="/images/vsrs/rd_publications.png"
               alt="Redesigned publications page"
@@ -390,27 +478,18 @@ export default function Vsrs() {
             />
           </Grid>
 
-          <Grid item xs={12} md={4}>
-            <Typography>Publications Rationale</Typography>
-          </Grid>
-
-          <Grid item xs={12}>
+          <Grid item xs={12} md={6}>
             <Typography variant="h5">
               <strong>People</strong>
+              <br />
+              <br />
             </Typography>
-          </Grid>
-
-          <Grid item xs={12} md={8}>
             <Image
               src="/images/vsrs/rd_people.png"
               alt="Redesigned people page"
               width={1512}
               height={1563}
             />
-          </Grid>
-
-          <Grid item xs={12} md={4}>
-            <Typography>People Rationale</Typography>
           </Grid>
         </Grid>
       </Grid>
