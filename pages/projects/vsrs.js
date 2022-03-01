@@ -88,7 +88,7 @@ export default function Vsrs() {
               <strong>Wireframing, Design System, and Card Iteration</strong>
               <br />I led the wireframing process and finalized the typography
               and color systems in our final iteration. I developed and iterated
-              on the card designss for displaying individual research projects.
+              on the card designs for displaying individual research projects.
             </Typography>
           </Grid>
           <Grid item xs={12} md={6}>
