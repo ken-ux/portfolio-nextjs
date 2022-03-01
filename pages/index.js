@@ -31,7 +31,7 @@ export default function Index() {
         <ProjectCard
           image="/images/vsrs_splash.png"
           title="VSRS Website Redesign"
-          text="Redesign of a research website for clarity and stronger identity."
+          text="Redesign of a lab website informed through UX principles."
           tags="UI/UX, Web Design, UX Research"
           link="/projects/vsrs"
         />
@@ -50,15 +50,13 @@ export default function Index() {
           tags="Service Design, Web Design, UX Research"
           link="/projects/packwithus"
         />
-        <Box sx={{ display: "none" }}>
-          <ProjectCard
-            image="/images/collegedemo_splash.png"
-            title="Demographics of Washington Universities"
-            text="Infographic of racial and gender diversity refined through user research."
-            tags="Information Design, Data Science, UX Research"
-            link="/"
-          />
-        </Box>
+        <ProjectCard
+          image="/images/collegedemo_splash.png"
+          title="(To Be Added) Demographics of Washington Universities"
+          text="Infographics of racial and gender diversity refined through user research."
+          tags="Information Design, Data Science, UX Research"
+          link="/projects/collegeinfographic"
+        />
       </Grid>
     </Layout>
   );
