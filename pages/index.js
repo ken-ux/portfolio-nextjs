@@ -52,7 +52,7 @@ export default function Index() {
         />
         <ProjectCard
           image="/images/collegedemo_splash.png"
-          title="(To Be Added) Demographics of Washington Universities"
+          title="Demographics of Washington Universities"
           text="Infographics of racial and gender diversity refined through user research."
           tags="Information Design, Data Science, UX Research"
           link="/projects/collegeinfographic"
