@@ -29,7 +29,7 @@ export default function PackWithUs() {
         </Typography>
         <Typography variant="body2">
           A multi-touchpoint service design that incorporates AI to streamline
-          flight preparation.
+          trip-planning.
         </Typography>
       </Box>
 

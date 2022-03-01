@@ -27,7 +27,7 @@ export default function Vsrs() {
         </Typography>
         <Typography variant="body2">
           A redesign of the Visualization Studies Research Studio&apos;s website
-          based in stakeholder interviews and user research.
+          based in stakeholder interviews and UX methodologies.
         </Typography>
       </Box>
 
@@ -376,7 +376,7 @@ export default function Vsrs() {
               Minimal use of colors in the website&apos;s redesign was a
               stakeholder priority. The VSRS&apos;s research lead wanted the
               visualizations produced or analyzed in their studies to be the
-              main focus of a page.
+              main focus of each page.
               <br />
               <br />
               By utilizing a neutral color palette, we created a space for
@@ -389,9 +389,11 @@ export default function Vsrs() {
               <strong>Organized text content and placement.</strong>
               <br />
               As a repository of past and ongoing projects, information overload
-              and crowding was prevalent. Our team was intentional in
-              structuring information on <strong>and</strong> between pages to
-              best match the flow of common user actions.
+              and crowding was prevalent in its original design. Our team was
+              intentional in structuring information on <strong>
+                and
+              </strong>{" "}
+              between pages to best match the flow of common user actions.
               <br />
               <br />
               This was salient in the design of the project pages, which had no
@@ -502,7 +504,10 @@ export default function Vsrs() {
           </Grid>
 
           <Grid item xs={12}>
-            <Typography>This is the original design.</Typography>
+            <Typography>
+              For comparison, these are screenshots of the original website
+              design.
+            </Typography>
           </Grid>
 
           <Grid item xs={4}>
@@ -514,7 +519,7 @@ export default function Vsrs() {
                 height={1470}
               />
             </Box>
-            <Typography variant="caption">Home page.</Typography>
+            <Typography variant="caption">Home</Typography>
           </Grid>
 
           <Grid item xs={4}>
@@ -526,6 +531,7 @@ export default function Vsrs() {
                 height={1470}
               />
             </Box>
+            <Typography variant="caption">Projects (Landing)</Typography>
           </Grid>
 
           <Grid item xs={4}>
@@ -537,6 +543,7 @@ export default function Vsrs() {
                 height={1470}
               />
             </Box>
+            <Typography variant="caption">Project (Detailed Page)</Typography>
           </Grid>
 
           <Grid item xs={4}>
@@ -548,6 +555,7 @@ export default function Vsrs() {
                 height={1470}
               />
             </Box>
+            <Typography variant="caption">Publications</Typography>
           </Grid>
 
           <Grid item xs={4}>
@@ -559,6 +567,7 @@ export default function Vsrs() {
                 height={1470}
               />
             </Box>
+            <Typography variant="caption">People</Typography>
           </Grid>
         </Grid>
       </Grid>
