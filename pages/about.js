@@ -20,52 +20,42 @@ export default function About() {
           mx: "auto",
         }}
       >
-        <Box sx={{ mb: 4, maxWidth: 600 }}>
+        <Box sx={{ mb: 4, maxWidth: 800 }}>
           <Typography variant="h4" component="h1" gutterBottom>
             Hi, I&apos;m Kenny. ☺️
           </Typography>
           <Typography>
-            I am a product designer that occasionally moonlights as a frontend
+            I am a UX designer that occasionally moonlights as a frontend
             engineer.
             <br />
             <br />I envision design as a way to harness creativity, expand
             boundaries, and deliver intention. I hope to build my career with
-            these principles in mind; creating experiences that contribute to
-            social good while being refined to endure and be adored.
+            these principles in mind; creating experiences that are meant to
+            endure and be adored.
+            <br />
+            <br />I have an M.S. in Information Management from the University
+            of Washington, where I specialized in User Experience. I also hold a
+            dual BA/BS in Public Health and Biology from the same institution.
           </Typography>
           <br />
           <br />
           <Typography variant="h4" component="h2" gutterBottom>
-            And here&apos;s my story.
+            And here&apos;s a little more.
           </Typography>
           <Typography gutterBottom>
-            I am a first-generation Vietnamese-American raised around South
-            Seattle. I recently finished a M.S. in Information Management from
-            the University of Washington, where I specialized in User
-            Experience. As a queer person of color, I heavily draw inspiration
-            from the resiliency of communities I am part of. To be where I am
-            today meant struggling through privileged spaces while finding my
-            own voice.
+            I am a first-generation Vietnamese-American raised in and around
+            South Seattle. As a queer person of color, I heavily draw
+            inspiration from the resiliency of communities I am part of.
             <br />
             <br />
-            Contrary to some in my field, I didn&apos;t start off wanting to be
-            a designer. I entered university as a pre-med student, eventually
-            earning a dual degree in Biology and Public Health. However, my
-            younger-self dreamed of making a career that encapsulated
-            creativity, self-expression, and storytelling. So, I made the
-            difficult decision during my senior year to forego what I had been
-            working towards to pursue my passions.
-            <br />
-            <br />I finished up my degrees while taking a few foundational
-            courses in computer science, informatics, and design. I briefly
-            interned as a software engineer upon graduation, then entered a
-            graduate program to solidify my design techniques and UX
-            methodology.
+            Some of my hobbies include oil painting, digital art, film
+            photography, comics (I am a DC fanboy), listening to R{"&"}B music,
+            and gaming—I was born the same year as Pokémon so there has to be a
+            correlation there.
             <br />
             <br />
-            And that&apos;s where I&apos;m at today: A product designer who was
-            motivated enough to take a few steps back so they could begin
-            stepping in the right direction.
+            Feel free to connect with me about anything you&apos;re curious
+            about!
           </Typography>
         </Box>
         <Box>
