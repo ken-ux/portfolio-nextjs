@@ -22,7 +22,7 @@ export default function Index() {
           <em>noun</em>
           <br />
           <ol>
-            <li>seattle-based product designer + frontend engineer</li>
+            <li>seattle-based UX designer + frontend engineer</li>
             <li>curator of digital experiences</li>
           </ol>
         </Typography>
