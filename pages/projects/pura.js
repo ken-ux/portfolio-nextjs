@@ -44,6 +44,7 @@ export default function Pura() {
           width="3000px"
           height="900px"
           alt="project banner"
+          priority={true}
         />
       </Box>
 
