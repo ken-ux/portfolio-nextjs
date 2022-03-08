@@ -27,7 +27,7 @@ const ResponsiveAppBar = ({ home }) => {
       position="static"
       elevation={0}
       color={home ? "transparent" : "inherit"}
-      sx={{ py: 8, px: { xs: 2, md: 8 } }}
+      sx={{ py: { xs: 6, md: 8 }, px: { xs: 2, md: 8 } }}
     >
       <Container maxWidth="xl">
         <Toolbar disableGutters>
@@ -123,7 +123,7 @@ const ResponsiveAppBar = ({ home }) => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon />
+              <MenuIcon sx={{ color: home ? "white" : "black" }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -180,11 +180,13 @@ const ResponsiveAppBar = ({ home }) => {
           </Box>
           <Typography
             variant="h6"
+            component={Link}
+            href="/"
+            underline="none"
             noWrap
-            component="div"
+            color={home ? "white" : "black"}
             sx={{
               flexGrow: 1,
-              color: "white",
               display: { xs: "flex", md: "none" },
             }}
           >
