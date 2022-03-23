@@ -31,7 +31,7 @@ export default function About() {
             <br />
             To me, design is a way to harness creativity, expand boundaries, and
             deliver intention. I hope to build my career with these principles
-            in mind and creatie experiences that can endure and be adored. I
+            in mind and create experiences that can endure and be adored. I
             want my work to show my passion for creating things that people will
             enjoy.
           </Typography>
