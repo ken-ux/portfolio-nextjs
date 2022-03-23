@@ -28,29 +28,32 @@ export default function About() {
             I am a UX designer that occasionally moonlights as a frontend
             engineer.
             <br />
-            <br />I envision design as a way to harness creativity, expand
-            boundaries, and deliver intention. I hope to build my career with
-            these principles in mind; creating experiences that are meant to
-            endure and be adored.
             <br />
-            <br />I have an M.S. in Information Management from the University
-            of Washington, where I specialized in User Experience. I also hold a
-            dual BA/BS in Public Health and Biology from the same institution.
+            To me, design is a way to harness creativity, expand boundaries, and
+            deliver intention. I hope to build my career with these principles
+            in mind and creatie experiences that can endure and be adored. I
+            want my work to show my passion for creating things that people will
+            enjoy.
           </Typography>
           <br />
           <br />
           <Typography variant="h4" component="h2" gutterBottom>
-            And here&apos;s a little more.
+            And here&apos;s a little more about me.
           </Typography>
           <Typography gutterBottom>
+            I have an M.S. in Information Management from the University of
+            Washington, where I specialized in User Experience. I also hold a
+            dual BA/BS in Public Health and Biology from the same institution.
+            <br />
+            <br />
             I am a first-generation Vietnamese-American raised in and around
             South Seattle. As a queer person of color, I heavily draw
             inspiration from the resiliency of communities I am part of.
             <br />
             <br />
-            Some of my hobbies include oil painting, digital art, film
+            Some of my hobbies include watercolor painting, digital art, film
             photography, comics (I am a DC fanboy), listening to R{"&"}B music,
-            and gaming—I was born the same year as Pokémon so there has to be a
+            and gaming—I was born the same year as Pokémon, so there has to be a
             correlation there.
             <br />
             <br />
