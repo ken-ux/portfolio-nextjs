@@ -85,7 +85,7 @@ const ResponsiveAppBar = ({ home }) => {
                 About
               </Typography>
             </Link>
-            <Link
+            {/* <Link
               href="https://drive.google.com/file/d/1tHtYJSEmKTkuUpOlRGGnazmPU2zKWr7S/view"
               target="_blank"
               rel="noopener"
@@ -104,7 +104,7 @@ const ResponsiveAppBar = ({ home }) => {
               >
                 Resume
               </Typography>
-            </Link>
+            </Link> */}
           </Box>
 
           {/* Mobile View */}
@@ -165,7 +165,7 @@ const ResponsiveAppBar = ({ home }) => {
                   About
                 </Typography>
               </MenuItem>
-              <MenuItem onClick={handleCloseNavMenu}>
+              {/* <MenuItem onClick={handleCloseNavMenu}>
                 <Typography
                   color="black"
                   textAlign="center"
@@ -175,7 +175,7 @@ const ResponsiveAppBar = ({ home }) => {
                 >
                   Resume
                 </Typography>
-              </MenuItem>
+              </MenuItem> */}
             </Menu>
           </Box>
           <Typography
