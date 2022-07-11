@@ -52,7 +52,7 @@ export default function Pura() {
         container
         direction="column"
         rowSpacing={10}
-        maxWidth="1000px"
+        maxWidth="xl"
         sx={{ mx: "auto" }}
       >
         <Grid container item rowSpacing={4}>
