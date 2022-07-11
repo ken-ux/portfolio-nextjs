@@ -29,7 +29,7 @@ const ResponsiveAppBar = ({ home }) => {
       color={home ? "transparent" : "inherit"}
       sx={{ py: { xs: 6, md: 8 }, px: { xs: 2, md: 8 } }}
     >
-      <Container maxWidth="xl">
+      <Container maxWidth={false}>
         <Toolbar disableGutters>
           {/* Desktop View */}
           <Box sx={{ mr: 2, display: { xs: "none", md: "flex" }, flexGrow: 1 }}>

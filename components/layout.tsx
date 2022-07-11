@@ -12,7 +12,7 @@ export default function Layout({
   home?: boolean;
 }) {
   return (
-    <Container maxWidth="xl" disableGutters>
+    <Container maxWidth={false} disableGutters>
       <ResponsiveAppBar home={home ? true : false} />
 
       <Box
