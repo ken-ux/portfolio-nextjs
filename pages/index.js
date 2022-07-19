@@ -29,9 +29,9 @@ export default function Index() {
           <em>noun</em>
           <ol>
             <li>seattle-based UX designer + frontend engineer</li>
-            <li>curator of digital experiences</li>
+            <li>works in the gaming industry</li>
           </ol>
-          currently: ux designer @ DoubleDown Interactive 👾
+          currently: UX designer @ DoubleDown Interactive 👾
         </Typography>
       </Box>
       <Grid container spacing={4}>

@@ -31,7 +31,7 @@ export default function About() {
             <br />
             To me, design is a way to harness creativity, expand boundaries, and
             deliver intention. I hope to build my career with these principles
-            in mind and create experiences that can endure and be adored. I
+            in mind and create experiences that will endure and be adored. I
             want my work to show my passion for creating things that people will
             enjoy.
           </Typography>
@@ -41,8 +41,8 @@ export default function About() {
             And here&apos;s a little more about me.
           </Typography>
           <Typography gutterBottom>
-            I have an M.S. in Information Management from the University of
-            Washington, where I specialized in User Experience. I also hold a
+            I have an M.S. in Information Management with a concentration in
+            User Experience from the University of Washington. I also hold a
             dual BA/BS in Public Health and Biology from the same institution.
             <br />
             <br />
@@ -54,7 +54,9 @@ export default function About() {
             Some of my hobbies include watercolor painting, digital art, film
             photography, comics (I am a DC fanboy), listening to R{"&"}B music,
             and gaming—I was born the same year as Pokémon, so there has to be a
-            correlation there.
+            correlation there. Other game series&apos; I like include Shin
+            Megami Tensei, Bravely, and Taiko no Tatsujin; I love a good rhythm
+            game.
             <br />
             <br />
             Feel free to connect with me about anything you&apos;re curious
