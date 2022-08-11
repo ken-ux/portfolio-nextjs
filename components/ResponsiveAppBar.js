@@ -5,13 +5,15 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
 
-const ResponsiveAppBar = ({ home }) => {
+const ResponsiveAppBar = () => {
   const [anchorElNav, setAnchorElNav] = React.useState();
 
   const handleOpenNavMenu = (event) => {
@@ -26,7 +28,7 @@ const ResponsiveAppBar = ({ home }) => {
     <AppBar
       position="static"
       elevation={0}
-      color={home ? "transparent" : "inherit"}
+      color="transparent"
       sx={{ py: { xs: 6, md: 8 }, px: { xs: 2, md: 8 } }}
     >
       <Container maxWidth={false}>
@@ -48,14 +50,19 @@ const ResponsiveAppBar = ({ home }) => {
             </Box>
           </Box>
 
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              justifyContent: "space-between",
+            }}
+          >
             <Link
               href="/"
               sx={{ textDecoration: "none", my: 2, mx: 2, display: "block" }}
             >
               <Typography
                 variant="h6"
-                color={home ? "white" : "black"}
+                color="black"
                 sx={{
                   transition: "opacity 170ms ease-in-out",
                   "&:hover": {
@@ -64,7 +71,7 @@ const ResponsiveAppBar = ({ home }) => {
                   },
                 }}
               >
-                Home
+                home
               </Typography>
             </Link>
             <Link
@@ -73,7 +80,7 @@ const ResponsiveAppBar = ({ home }) => {
             >
               <Typography
                 variant="h6"
-                color={home ? "white" : "black"}
+                color="black"
                 sx={{
                   transition: "opacity 170ms ease-in-out",
                   "&:hover": {
@@ -82,36 +89,48 @@ const ResponsiveAppBar = ({ home }) => {
                   },
                 }}
               >
-                About
+                about
               </Typography>
             </Link>
-            {/* <Link
-              href="https://drive.google.com/file/d/1tHtYJSEmKTkuUpOlRGGnazmPU2zKWr7S/view"
-              target="_blank"
-              rel="noopener"
-              sx={{ textDecoration: "none", my: 2, mx: 2, display: "block" }}
-            >
-              <Typography
-                variant="h6"
-                color={home ? "white" : "black"}
-                sx={{
+            <IconButton
+              color="inherit"
+              disableRipple
+              sx={{
+                ml: 2,
+                mr: 1,
+                transition: "opacity 170ms ease-in-out",
+                "&:hover": {
+                  opacity: "60%",
                   transition: "opacity 170ms ease-in-out",
-                  "&:hover": {
-                    opacity: "60%",
-                    transition: "opacity 170ms ease-in-out",
-                  },
-                }}
-              >
-                Resume
-              </Typography>
-            </Link> */}
+                },
+              }}
+              component={Link}
+              href="mailto:kennynguyenx@gmail.com"
+            >
+              <EmailIcon fontSize="large" />
+            </IconButton>
+            <IconButton
+              color="inherit"
+              disableRipple
+              sx={{
+                mx: 1,
+                transition: "opacity 170ms ease-in-out",
+                "&:hover": {
+                  opacity: "60%",
+                  transition: "opacity 170ms ease-in-out",
+                },
+              }}
+              component={Link}
+              href="https://www.linkedin.com/in/kennyhn/"
+            >
+              <LinkedInIcon fontSize="large" />
+            </IconButton>
           </Box>
 
           {/* Mobile View */}
           <Box
             sx={{
               flexGrow: 1,
-              color: "white",
               display: { xs: "flex", md: "none" },
             }}
           >
@@ -123,7 +142,7 @@ const ResponsiveAppBar = ({ home }) => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon sx={{ color: home ? "white" : "black" }} />
+              <MenuIcon sx={{ color: "black" }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -165,17 +184,6 @@ const ResponsiveAppBar = ({ home }) => {
                   About
                 </Typography>
               </MenuItem>
-              {/* <MenuItem onClick={handleCloseNavMenu}>
-                <Typography
-                  color="black"
-                  textAlign="center"
-                  underline="none"
-                  component={Link}
-                  href="https://drive.google.com/file/d/1tHtYJSEmKTkuUpOlRGGnazmPU2zKWr7S/view"
-                >
-                  Resume
-                </Typography>
-              </MenuItem> */}
             </Menu>
           </Box>
           <Typography
@@ -184,7 +192,7 @@ const ResponsiveAppBar = ({ home }) => {
             href="/"
             underline="none"
             noWrap
-            color={home ? "white" : "black"}
+            color="black"
             sx={{
               flexGrow: 1,
               display: { xs: "flex", md: "none" },
