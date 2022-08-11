@@ -7,13 +7,14 @@ import Grid from "@mui/material/Grid";
 
 export default function Index() {
   return (
-    <Layout home>
+    <Layout>
       <Box sx={{ mb: 18 }}>
         <Typography
           variant="h3"
           component="h1"
           gutterBottom
-          sx={{ fontWeight: "normal" }}
+          sx={{ fontWeight: "bold" }}
+          color="#0C80EC"
         >
           Kenny Nguyen
           <br />
@@ -22,16 +23,26 @@ export default function Index() {
           variant="h4"
           component="h2"
           gutterBottom
-          sx={{ fontWeight: "normal" }}
+          sx={{ fontWeight: "bold" }}
         >
           /ˈkɛni ŋwiəŋ˧˨/
           <br />
           <em>noun</em>
-          <ol>
-            <li>seattle-based UX designer + frontend engineer</li>
-            <li>works in the gaming industry</li>
-          </ol>
-          currently: UX designer @ DoubleDown Interactive 👾
+          <br />
+          <br />
+          seattle-based <span style={{ color: "#0C80EC" }}>ux designer</span> +
+          frontend developer
+          <br />
+          <br />
+          <br />
+        </Typography>
+        <Typography variant="h6" component="h2" sx={{ fontWeight: "normal" }}>
+          <strong>currently:</strong> ux designer @ doubledown interactive 👾
+          <br />
+          <br />
+          <br />
+          <br />
+          view my work below ↓
         </Typography>
       </Box>
       <Grid container spacing={4}>
