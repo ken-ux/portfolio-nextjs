@@ -14,7 +14,7 @@ export default function Index() {
           component="h1"
           gutterBottom
           sx={{ fontWeight: "bold" }}
-          color="#0C80EC"
+          color="primary"
         >
           Kenny Nguyen
           <br />
@@ -30,8 +30,11 @@ export default function Index() {
           <em>noun</em>
           <br />
           <br />
-          seattle-based <span style={{ color: "#0C80EC" }}>ux designer</span> +
-          frontend developer
+          seattle-based{" "}
+          <Typography variant="span" color="primary">
+            ux designer
+          </Typography>{" "}
+          + frontend developer
           <br />
           <br />
           <br />
