@@ -12,8 +12,46 @@ import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Fab from "@mui/material/Fab";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import Fade from "@mui/material/Fade";
 
-const ResponsiveAppBar = () => {
+function ScrollTop(props) {
+  const { children, window } = props;
+  const trigger = useScrollTrigger({
+    target: window,
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const handleClick = (event) => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({
+        block: "center",
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <Fade in={trigger}>
+      <Box
+        onClick={handleClick}
+        role="presentation"
+        sx={{ position: "fixed", bottom: 16, right: 16 }}
+      >
+        {children}
+      </Box>
+    </Fade>
+  );
+}
+
+function ResponsiveAppBar(props) {
   const [anchorElNav, setAnchorElNav] = React.useState();
 
   const handleOpenNavMenu = (event) => {
@@ -32,7 +70,7 @@ const ResponsiveAppBar = () => {
       sx={{ py: { xs: 6, md: 8 }, px: { xs: 2, md: 8 } }}
     >
       <Container maxWidth={false}>
-        <Toolbar disableGutters>
+        <Toolbar disableGutters id="back-to-top-anchor">
           {/* Desktop View */}
           <Box sx={{ mr: 2, display: { xs: "none", md: "flex" }, flexGrow: 1 }}>
             <Box
@@ -202,7 +240,17 @@ const ResponsiveAppBar = () => {
           </Typography>
         </Toolbar>
       </Container>
+      <ScrollTop {...props}>
+        <Fab
+          color="primary"
+          sx={{ boxShadow: 0 }}
+          size="small"
+          aria-label="scroll back to top"
+        >
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
     </AppBar>
   );
-};
+}
 export default ResponsiveAppBar;
