@@ -113,7 +113,7 @@ function ResponsiveAppBar(props) {
               </Typography>
             </Link>
             <IconButton
-              color="inherit"
+              color="primary"
               disableRipple
               sx={{
                 mx: 1,
@@ -129,7 +129,7 @@ function ResponsiveAppBar(props) {
               <EmailIcon fontSize="large" />
             </IconButton>
             <IconButton
-              color="inherit"
+              color="primary"
               disableRipple
               sx={{
                 mx: 1,
