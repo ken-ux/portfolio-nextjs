@@ -95,24 +95,6 @@ function ResponsiveAppBar(props) {
             }}
           >
             <Link
-              href="/"
-              sx={{ textDecoration: "none", my: 2, mx: 2, display: "block" }}
-            >
-              <Typography
-                variant="h6"
-                color="black"
-                sx={{
-                  transition: "opacity 170ms ease-in-out",
-                  "&:hover": {
-                    opacity: "60%",
-                    transition: "opacity 170ms ease-in-out",
-                  },
-                }}
-              >
-                home
-              </Typography>
-            </Link>
-            <Link
               href="/about"
               sx={{ textDecoration: "none", my: 2, mx: 2, display: "block" }}
             >
@@ -134,8 +116,7 @@ function ResponsiveAppBar(props) {
               color="inherit"
               disableRipple
               sx={{
-                ml: 2,
-                mr: 1,
+                mx: 1,
                 transition: "opacity 170ms ease-in-out",
                 "&:hover": {
                   opacity: "60%",
