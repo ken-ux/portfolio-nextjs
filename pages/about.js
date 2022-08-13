@@ -7,107 +7,108 @@ import IconButton from "@mui/material/IconButton";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import Grid from "@mui/material/Grid";
 
 export default function About() {
   return (
-    <Layout home>
+    <Layout>
       <Box
         sx={{
           display: "flex",
           flexWrap: "wrap",
           justifyContent: "space-between",
-          my: 4,
           mx: "auto",
         }}
       >
-        <Box sx={{ mb: 4, maxWidth: 800 }}>
+        <Box sx={{ maxWidth: 800 }}>
           <Typography variant="h4" component="h1" gutterBottom>
-            Hi, I&apos;m Kenny. ☺️
+            about me
           </Typography>
+          <br />
           <Typography>
-            I am a UX designer that occasionally moonlights as a frontend
-            engineer.
+            I&apos;m a UX designer occasionally moonlighting as a frontend
+            developer. Initially a self-taught coder, my interests led me to UX
+            in pursuit of a deeper understanding of why things are the way they
+            are. I love expanding how people experience the world through visual
+            and interactive design.
             <br />
             <br />
-            To me, design is a way to harness creativity, expand boundaries, and
-            deliver intention. I hope to build my career with these principles
-            in mind and create experiences that will endure and be adored. I
-            want my work to show my passion for creating things that people will
-            enjoy.
-          </Typography>
-          <br />
-          <br />
-          <Typography variant="h4" component="h2" gutterBottom>
-            And here&apos;s a little more about me.
-          </Typography>
-          <Typography gutterBottom>
-            I have an M.S. in Information Management with a concentration in
-            User Experience from the University of Washington. I also hold a
-            dual BA/BS in Public Health and Biology from the same institution.
+            A core aspect of my identity is being a first-generation
+            Vietnamese-American growing up around South Seattle. In addition, as
+            a queer person of color, I heavily draw inspiration from the
+            resiliency of communities I am part of or continually learn more
+            about.
             <br />
             <br />
-            I am a first-generation Vietnamese-American raised in and around
-            South Seattle. As a queer person of color, I heavily draw
-            inspiration from the resiliency of communities I am part of.
+            I graduated from the University of Washington with an M.S. in
+            Information Management. I did my undergrad at the same institution,
+            where I earned a dual BA/BS in Public Health and Biology.
             <br />
             <br />
             Some of my hobbies include watercolor painting, digital art, film
-            photography, comics (I am a DC fanboy), listening to R{"&"}B music,
-            and gaming—I was born the same year as Pokémon, so there has to be a
-            correlation there. Other game series&apos; I like include Shin
-            Megami Tensei, Bravely, and Taiko no Tatsujin; I love a good rhythm
-            game.
+            photography, comics (I primarily read DC), and mobile/PC gaming. A
+            few game series I like include Pokémon, Shin Megami Tensei, Bravely,
+            and Taiko no Tatsujin.
             <br />
             <br />
-            Feel free to connect with me about anything you&apos;re curious
-            about!
+            Feel free to connect or reach out to me below!
+            <br />
+            <br />
           </Typography>
+          <Grid
+            container
+            direction="column"
+            sx={{ alignItems: { xs: "center", md: "start" } }}
+          >
+            <Grid item xs={3}>
+              <IconButton
+                color="primary"
+                sx={{
+                  transition: "opacity 170ms ease-in-out",
+                  "&:hover": {
+                    opacity: "50%",
+                    transition: "opacity 170ms ease-in-out",
+                  },
+                }}
+                component={Link}
+                href="mailto:kennynguyenx@gmail.com"
+              >
+                <EmailIcon fontSize="large" />
+              </IconButton>
+              <IconButton
+                color="primary"
+                sx={{
+                  transition: "opacity 170ms ease-in-out",
+                  "&:hover": {
+                    opacity: "50%",
+                    transition: "opacity 170ms ease-in-out",
+                  },
+                }}
+                component={Link}
+                href="https://www.linkedin.com/in/kennyhn/"
+              >
+                <LinkedInIcon fontSize="large" />
+              </IconButton>
+              <IconButton
+                color="primary"
+                sx={{
+                  transition: "opacity 170ms ease-in-out",
+                  "&:hover": {
+                    opacity: "50%",
+                    transition: "opacity 170ms ease-in-out",
+                  },
+                }}
+                component={Link}
+                href="https://github.com/ken-ux/"
+              >
+                <GitHubIcon fontSize="large" />
+              </IconButton>
+            </Grid>
+          </Grid>
         </Box>
-        <Box>
-          <Typography variant="h6">Let&apos;s connect!</Typography>
-          <IconButton
-            sx={{
-              color: "white",
-              transition: "opacity 170ms ease-in-out",
-              "&:hover": {
-                opacity: "50%",
-                transition: "opacity 170ms ease-in-out",
-              },
-            }}
-            component={Link}
-            href="https://www.linkedin.com/in/kennyhn/"
-          >
-            <LinkedInIcon fontSize="inherit" />
-          </IconButton>
-          <IconButton
-            sx={{
-              color: "white",
-              transition: "opacity 170ms ease-in-out",
-              "&:hover": {
-                opacity: "50%",
-                transition: "opacity 170ms ease-in-out",
-              },
-            }}
-            component={Link}
-            href="https://github.com/ken-ux/"
-          >
-            <GitHubIcon fontSize="inherit" />
-          </IconButton>
-          <IconButton
-            sx={{
-              color: "white",
-              transition: "opacity 170ms ease-in-out",
-              "&:hover": {
-                opacity: "50%",
-                transition: "opacity 170ms ease-in-out",
-              },
-            }}
-            component={Link}
-            href="mailto:kennynguyenx@gmail.com"
-          >
-            <EmailIcon fontSize="inherit" />
-          </IconButton>
-        </Box>
+        {/* <Box>
+          Insert picture here.
+        </Box> */}
       </Box>
     </Layout>
   );
