@@ -27,7 +27,7 @@ export default function About() {
           <br />
           <Typography>
             I&apos;m a UX designer occasionally moonlighting as a frontend
-            developer. Initially a self-taught coder, my interests led me to UX
+            developer. Initially a mostly self-taught coder, my interests led me to UX
             in pursuit of a deeper understanding of why things are the way they
             are. I love expanding how people experience the world through visual
             and interactive design.
