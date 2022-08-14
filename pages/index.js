@@ -4,50 +4,61 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import ProjectCard from "../components/ProjectCard";
 import Grid from "@mui/material/Grid";
+import Image from "next/image";
 
 export default function Index() {
   return (
     <Layout>
-      <Box sx={{ mb: 18 }}>
-        <Typography
-          variant="h3"
-          component="h1"
-          gutterBottom
-          sx={{ fontWeight: "bold" }}
-          color="primary"
-        >
-          Kenny Nguyen
-          <br />
-        </Typography>
-        <Typography
-          variant="h4"
-          component="h2"
-          gutterBottom
-          sx={{ fontWeight: "bold" }}
-        >
-          /ˈkɛni ŋwiəŋ˧˨/
-          <br />
-          <em>noun</em>
-          <br />
-          <br />
-          seattle-based{" "}
-          <Typography variant="span" color="primary">
-            ux designer
-          </Typography>{" "}
-          + frontend developer
-          <br />
-          <br />
-          <br />
-        </Typography>
-        <Typography variant="h6" component="h2" sx={{ fontWeight: "normal" }}>
-          <strong>currently:</strong> ux designer @ doubledown interactive 👾
-          <br />
-          <br />
-          <br />
-          <br />
-          view my work below ↓
-        </Typography>
-      </Box>
+      <Grid container>
+        <Grid item sx={{ mb: 18 }}>
+          <Typography
+            variant="h3"
+            component="h1"
+            gutterBottom
+            sx={{ fontWeight: "bold" }}
+            color="primary"
+          >
+            Kenny Nguyen
+            <br />
+          </Typography>
+          <Typography
+            variant="h4"
+            component="h2"
+            gutterBottom
+            sx={{ fontWeight: "bold" }}
+          >
+            /ˈkɛni ŋwiəŋ˧˨/
+            <br />
+            <em>noun</em>
+            <br />
+            <br />
+            seattle-based{" "}
+            <Typography variant="span" color="primary">
+              ux designer
+            </Typography>{" "}
+            + frontend developer
+            <br />
+            <br />
+            <br />
+          </Typography>
+          <Typography variant="h6" component="h2" sx={{ fontWeight: "normal" }}>
+            <strong>currently:</strong> ux designer @ doubledown interactive 👾
+            <br />
+            <br />
+            <br />
+            <br />
+            view my work below ↓
+          </Typography>
+        </Grid>
+        <Grid item sx={{display: {xs: "none", lg: "block"}, mx: "auto"}}>
+          <Image
+            src="/images/lightbulb.gif"
+            width="360"
+            height="450"
+            alt="me and a lightbulb"
+          />
+        </Grid>
+      </Grid>
       <Grid container spacing={4} sx={{ mb: 12 }}>
         <ProjectCard
           image="/images/vsrs_splash.png"
@@ -78,10 +89,7 @@ export default function Index() {
           link="/projects/collegeinfographic"
         />
       </Grid>
-      <Typography
-        variant="h4"
-        component="h2"
-      >
+      <Typography variant="h4" component="h2">
         side projects
         <br />
         <br />
