@@ -48,7 +48,7 @@ export default function Index() {
           view my work below ↓
         </Typography>
       </Box>
-      <Grid container spacing={4} sx={{ mb: 18 }}>
+      <Grid container spacing={4} sx={{ mb: 12 }}>
         <ProjectCard
           image="/images/vsrs_splash.png"
           title="VSRS Website Redesign"
