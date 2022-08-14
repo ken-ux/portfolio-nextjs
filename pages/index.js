@@ -56,7 +56,6 @@ export default function Index() {
           tags="UI/UX, Web Design, UX Research"
           link="/projects/vsrs"
         />
-
         <ProjectCard
           image="/images/pura_splash.png"
           title="Pura"
@@ -77,6 +76,22 @@ export default function Index() {
           text="Infographics of racial and gender diversity refined through user research."
           tags="Information Design, Data Science, UX Research"
           link="/projects/collegeinfographic"
+        />
+        <ProjectCard
+          image="/images/cookies_splash.png"
+          title="Chocolate Chip Cookie Ingredients Analysis"
+          text="Notebook detailing my process and insights analyzing common cookie ingredients."
+          tags="Data Science, Data Visualization, HCDE"
+          link="https://www.kaggle.com/code/kennynguyen2/hcde-530-a5"
+          external
+        />
+        <ProjectCard
+          image="/images/meteors_splash.png"
+          title="Meteorite Diversity and Occurrence Analysis"
+          text="Notebook detailing my process and insights analyzing fragments from celestial bodies."
+          tags="Data Science, Data Visualization, HCDE"
+          link="https://www.kaggle.com/code/kennynguyen2/hcde-530-mini-project-1b"
+          external
         />
       </Grid>
     </Layout>
