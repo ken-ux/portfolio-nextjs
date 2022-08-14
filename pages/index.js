@@ -48,7 +48,7 @@ export default function Index() {
           view my work below ↓
         </Typography>
       </Box>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} sx={{ mb: 18 }}>
         <ProjectCard
           image="/images/vsrs_splash.png"
           title="VSRS Website Redesign"
@@ -77,6 +77,16 @@ export default function Index() {
           tags="Information Design, Data Science, UX Research"
           link="/projects/collegeinfographic"
         />
+      </Grid>
+      <Typography
+        variant="h4"
+        component="h2"
+      >
+        side projects
+        <br />
+        <br />
+      </Typography>
+      <Grid container spacing={4}>
         <ProjectCard
           image="/images/cookies_splash.png"
           title="Chocolate Chip Cookie Ingredients Analysis"
