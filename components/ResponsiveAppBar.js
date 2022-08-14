@@ -5,13 +5,53 @@ import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
 import IconButton from "@mui/material/IconButton";
+import EmailIcon from "@mui/icons-material/Email";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import Typography from "@mui/material/Typography";
 import Menu from "@mui/material/Menu";
 import MenuIcon from "@mui/icons-material/Menu";
 import Container from "@mui/material/Container";
 import MenuItem from "@mui/material/MenuItem";
+import useScrollTrigger from "@mui/material/useScrollTrigger";
+import Fab from "@mui/material/Fab";
+import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
+import Fade from "@mui/material/Fade";
 
-const ResponsiveAppBar = ({ home }) => {
+function ScrollTop(props) {
+  const { children, window } = props;
+  const trigger = useScrollTrigger({
+    target: window,
+    disableHysteresis: true,
+    threshold: 100,
+  });
+
+  const handleClick = (event) => {
+    const anchor = (event.target.ownerDocument || document).querySelector(
+      "#back-to-top-anchor"
+    );
+
+    if (anchor) {
+      anchor.scrollIntoView({
+        block: "center",
+        behavior: "smooth",
+      });
+    }
+  };
+
+  return (
+    <Fade in={trigger}>
+      <Box
+        onClick={handleClick}
+        role="presentation"
+        sx={{ position: "fixed", bottom: 16, right: 16 }}
+      >
+        {children}
+      </Box>
+    </Fade>
+  );
+}
+
+function ResponsiveAppBar(props) {
   const [anchorElNav, setAnchorElNav] = React.useState();
 
   const handleOpenNavMenu = (event) => {
@@ -26,11 +66,11 @@ const ResponsiveAppBar = ({ home }) => {
     <AppBar
       position="static"
       elevation={0}
-      color={home ? "transparent" : "inherit"}
+      color="transparent"
       sx={{ py: { xs: 6, md: 8 }, px: { xs: 2, md: 8 } }}
     >
       <Container maxWidth={false}>
-        <Toolbar disableGutters>
+        <Toolbar disableGutters id="back-to-top-anchor">
           {/* Desktop View */}
           <Box sx={{ mr: 2, display: { xs: "none", md: "flex" }, flexGrow: 1 }}>
             <Box
@@ -48,32 +88,19 @@ const ResponsiveAppBar = ({ home }) => {
             </Box>
           </Box>
 
-          <Box sx={{ display: { xs: "none", md: "flex" } }}>
-            <Link
-              href="/"
-              sx={{ textDecoration: "none", my: 2, mx: 2, display: "block" }}
-            >
-              <Typography
-                variant="h6"
-                color={home ? "white" : "black"}
-                sx={{
-                  transition: "opacity 170ms ease-in-out",
-                  "&:hover": {
-                    opacity: "60%",
-                    transition: "opacity 170ms ease-in-out",
-                  },
-                }}
-              >
-                Home
-              </Typography>
-            </Link>
+          <Box
+            sx={{
+              display: { xs: "none", md: "flex" },
+              justifyContent: "space-between",
+            }}
+          >
             <Link
               href="/about"
               sx={{ textDecoration: "none", my: 2, mx: 2, display: "block" }}
             >
               <Typography
                 variant="h6"
-                color={home ? "white" : "black"}
+                color="black"
                 sx={{
                   transition: "opacity 170ms ease-in-out",
                   "&:hover": {
@@ -82,36 +109,47 @@ const ResponsiveAppBar = ({ home }) => {
                   },
                 }}
               >
-                About
+                about
               </Typography>
             </Link>
-            {/* <Link
-              href="https://drive.google.com/file/d/1tHtYJSEmKTkuUpOlRGGnazmPU2zKWr7S/view"
-              target="_blank"
-              rel="noopener"
-              sx={{ textDecoration: "none", my: 2, mx: 2, display: "block" }}
-            >
-              <Typography
-                variant="h6"
-                color={home ? "white" : "black"}
-                sx={{
+            <IconButton
+              color="primary"
+              disableRipple
+              sx={{
+                mx: 1,
+                transition: "opacity 170ms ease-in-out",
+                "&:hover": {
+                  opacity: "60%",
                   transition: "opacity 170ms ease-in-out",
-                  "&:hover": {
-                    opacity: "60%",
-                    transition: "opacity 170ms ease-in-out",
-                  },
-                }}
-              >
-                Resume
-              </Typography>
-            </Link> */}
+                },
+              }}
+              component={Link}
+              href="mailto:kennynguyenx@gmail.com"
+            >
+              <EmailIcon fontSize="large" />
+            </IconButton>
+            <IconButton
+              color="primary"
+              disableRipple
+              sx={{
+                mx: 1,
+                transition: "opacity 170ms ease-in-out",
+                "&:hover": {
+                  opacity: "60%",
+                  transition: "opacity 170ms ease-in-out",
+                },
+              }}
+              component={Link}
+              href="https://www.linkedin.com/in/kennyhn/"
+            >
+              <LinkedInIcon fontSize="large" />
+            </IconButton>
           </Box>
 
           {/* Mobile View */}
           <Box
             sx={{
               flexGrow: 1,
-              color: "white",
               display: { xs: "flex", md: "none" },
             }}
           >
@@ -123,7 +161,7 @@ const ResponsiveAppBar = ({ home }) => {
               onClick={handleOpenNavMenu}
               color="inherit"
             >
-              <MenuIcon sx={{ color: home ? "white" : "black" }} />
+              <MenuIcon sx={{ color: "black" }} />
             </IconButton>
             <Menu
               id="menu-appbar"
@@ -165,17 +203,6 @@ const ResponsiveAppBar = ({ home }) => {
                   About
                 </Typography>
               </MenuItem>
-              {/* <MenuItem onClick={handleCloseNavMenu}>
-                <Typography
-                  color="black"
-                  textAlign="center"
-                  underline="none"
-                  component={Link}
-                  href="https://drive.google.com/file/d/1tHtYJSEmKTkuUpOlRGGnazmPU2zKWr7S/view"
-                >
-                  Resume
-                </Typography>
-              </MenuItem> */}
             </Menu>
           </Box>
           <Typography
@@ -184,7 +211,7 @@ const ResponsiveAppBar = ({ home }) => {
             href="/"
             underline="none"
             noWrap
-            color={home ? "white" : "black"}
+            color="black"
             sx={{
               flexGrow: 1,
               display: { xs: "flex", md: "none" },
@@ -194,7 +221,17 @@ const ResponsiveAppBar = ({ home }) => {
           </Typography>
         </Toolbar>
       </Container>
+      <ScrollTop {...props}>
+        <Fab
+          color="primary"
+          sx={{ boxShadow: 0 }}
+          size="small"
+          aria-label="scroll back to top"
+        >
+          <KeyboardArrowUpIcon />
+        </Fab>
+      </ScrollTop>
     </AppBar>
   );
-};
+}
 export default ResponsiveAppBar;

@@ -7,13 +7,14 @@ import Grid from "@mui/material/Grid";
 
 export default function Index() {
   return (
-    <Layout home>
+    <Layout>
       <Box sx={{ mb: 18 }}>
         <Typography
           variant="h3"
           component="h1"
           gutterBottom
-          sx={{ fontWeight: "normal" }}
+          sx={{ fontWeight: "bold" }}
+          color="primary"
         >
           Kenny Nguyen
           <br />
@@ -22,19 +23,32 @@ export default function Index() {
           variant="h4"
           component="h2"
           gutterBottom
-          sx={{ fontWeight: "normal" }}
+          sx={{ fontWeight: "bold" }}
         >
           /ˈkɛni ŋwiəŋ˧˨/
           <br />
           <em>noun</em>
-          <ol>
-            <li>seattle-based UX designer + frontend engineer</li>
-            <li>works in the gaming industry</li>
-          </ol>
-          currently: UX designer @ DoubleDown Interactive 👾
+          <br />
+          <br />
+          seattle-based{" "}
+          <Typography variant="span" color="primary">
+            ux designer
+          </Typography>{" "}
+          + frontend developer
+          <br />
+          <br />
+          <br />
+        </Typography>
+        <Typography variant="h6" component="h2" sx={{ fontWeight: "normal" }}>
+          <strong>currently:</strong> ux designer @ doubledown interactive 👾
+          <br />
+          <br />
+          <br />
+          <br />
+          view my work below ↓
         </Typography>
       </Box>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} sx={{ mb: 12 }}>
         <ProjectCard
           image="/images/vsrs_splash.png"
           title="VSRS Website Redesign"
@@ -42,7 +56,6 @@ export default function Index() {
           tags="UI/UX, Web Design, UX Research"
           link="/projects/vsrs"
         />
-
         <ProjectCard
           image="/images/pura_splash.png"
           title="Pura"
@@ -63,6 +76,32 @@ export default function Index() {
           text="Infographics of racial and gender diversity refined through user research."
           tags="Information Design, Data Science, UX Research"
           link="/projects/collegeinfographic"
+        />
+      </Grid>
+      <Typography
+        variant="h4"
+        component="h2"
+      >
+        side projects
+        <br />
+        <br />
+      </Typography>
+      <Grid container spacing={4}>
+        <ProjectCard
+          image="/images/cookies_splash.png"
+          title="Chocolate Chip Cookie Ingredients Analysis"
+          text="Notebook detailing my process and insights analyzing common cookie ingredients."
+          tags="Data Science, Data Visualization, HCDE"
+          link="https://www.kaggle.com/code/kennynguyen2/hcde-530-a5"
+          external
+        />
+        <ProjectCard
+          image="/images/meteors_splash.png"
+          title="Meteorite Diversity and Occurrence Analysis"
+          text="Notebook detailing my process and insights analyzing fragments from celestial bodies."
+          tags="Data Science, Data Visualization, HCDE"
+          link="https://www.kaggle.com/code/kennynguyen2/hcde-530-mini-project-1b"
+          external
         />
       </Grid>
     </Layout>
