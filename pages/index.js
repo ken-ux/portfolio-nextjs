@@ -50,7 +50,7 @@ export default function Index() {
             view my work below ↓
           </Typography>
         </Grid>
-        <Grid item sx={{display: {xs: "none", lg: "block"}, mx: "auto"}}>
+        <Grid item sx={{ display: { xs: "none", lg: "block" }, mx: "auto" }}>
           <Image
             src="/images/lightbulb.gif"
             width="360"
@@ -89,8 +89,8 @@ export default function Index() {
           link="/projects/collegeinfographic"
         />
       </Grid>
-      <Typography variant="h4" component="h2">
-        side projects
+      <Typography variant="h5" component="h2">
+        <strong>miscellaneous projects</strong>
         <br />
         <br />
       </Typography>

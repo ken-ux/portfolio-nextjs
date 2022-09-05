@@ -27,16 +27,16 @@ export default function About() {
           <br />
           <Typography>
             I&apos;m a UX designer occasionally moonlighting as a frontend
-            developer. Initially a mostly self-taught coder, my interests led me to UX
-            in pursuit of a deeper understanding of why things are the way they
-            are. I love expanding how people experience the world through visual
-            and interactive design.
+            developer. Starting off as a mostly self-taught coder, my interests
+            led me to UX in pursuit of a deeper understanding of why things are
+            the way they are. I love expanding how people experience the world
+            through visual and interactive design.
             <br />
             <br />
             A core aspect of my identity is being a first-generation
             Vietnamese-American growing up around South Seattle. In addition, as
             a queer person of color, I heavily draw inspiration from the
-            resiliency of communities I am part of or continually learn more
+            resiliency of communities I am part of and continue to learn more
             about.
             <br />
             <br />
