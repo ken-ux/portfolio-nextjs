@@ -67,7 +67,7 @@ function ResponsiveAppBar(props) {
       position="static"
       elevation={0}
       color="transparent"
-      sx={{ py: { xs: 6, md: 8 }, px: { xs: 2, md: 8 } }}
+      sx={{ py: 6, px: { xs: 2, md: 8 } }}
     >
       <Container maxWidth={false}>
         <Toolbar disableGutters id="back-to-top-anchor">
