@@ -89,8 +89,8 @@ export default function Index() {
           link="/projects/collegeinfographic"
         />
       </Grid>
-      <Typography variant="h4" component="h2">
-        side projects
+      <Typography variant="h5" component="h2">
+        <strong>miscellaneous projects</strong>
         <br />
         <br />
       </Typography>
