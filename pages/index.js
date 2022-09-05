@@ -50,7 +50,7 @@ export default function Index() {
             view my work below ↓
           </Typography>
         </Grid>
-        <Grid item sx={{display: {xs: "none", lg: "block"}, mx: "auto"}}>
+        <Grid item sx={{ display: { xs: "none", lg: "block" }, mx: "auto" }}>
           <Image
             src="/images/lightbulb.gif"
             width="360"
