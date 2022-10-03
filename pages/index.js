@@ -36,7 +36,7 @@ export default function Index() {
             <Typography variant="span" color="primary">
               ux designer
             </Typography>{" "}
-            + frontend developer
+            in the gaming industry
             <br />
             <br />
             <br />
