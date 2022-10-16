@@ -8,6 +8,8 @@ import CardActionArea from "@mui/material/CardActionArea";
 import Box from "@mui/material/Box";
 import Link from "next/link";
 
+// InternalCard is for cards that link to pages on own website
+// ExternalCard is for cards that link externally
 function InternalCard(props) {
   return (
     <Link href={props.link} passHref>
