@@ -59,7 +59,7 @@ export default function Index() {
           />
         </Grid>
       </Grid>
-      <Grid container spacing={4} sx={{ mb: 12 }}>
+      <Grid container spacing={4}>
         <ProjectCard
           image="/images/vsrs_splash.png"
           title="VSRS Website Redesign"
@@ -87,29 +87,6 @@ export default function Index() {
           text="Infographics of racial and gender diversity refined through user research."
           tags="Information Design, Data Science, UX Research"
           link="/projects/collegeinfographic"
-        />
-      </Grid>
-      <Typography variant="h5" component="h2">
-        <strong>miscellaneous projects</strong>
-        <br />
-        <br />
-      </Typography>
-      <Grid container spacing={4}>
-        <ProjectCard
-          image="/images/cookies_splash.png"
-          title="Chocolate Chip Cookie Ingredients Analysis"
-          text="Notebook detailing my process and insights analyzing common cookie ingredients."
-          tags="Data Science, Data Visualization, HCDE"
-          link="https://www.kaggle.com/code/kennynguyen2/hcde-530-a5"
-          external
-        />
-        <ProjectCard
-          image="/images/meteors_splash.png"
-          title="Meteorite Diversity and Occurrence Analysis"
-          text="Notebook detailing my process and insights analyzing fragments from celestial bodies."
-          tags="Data Science, Data Visualization, HCDE"
-          link="https://www.kaggle.com/code/kennynguyen2/hcde-530-mini-project-1b"
-          external
         />
       </Grid>
     </Layout>
