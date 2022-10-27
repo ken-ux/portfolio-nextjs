@@ -81,13 +81,6 @@ export default function Index() {
           tags="Service Design, Web Design, UX Research"
           link="/projects/packwithus"
         />
-        <ProjectCard
-          image="/images/collegedemo_splash.png"
-          title="Demographics of Washington Universities"
-          text="Infographics of racial and gender diversity refined through user research."
-          tags="Information Design, Data Science, UX Research"
-          link="/projects/collegeinfographic"
-        />
       </Grid>
     </Layout>
   );
