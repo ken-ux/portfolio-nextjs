@@ -5,7 +5,7 @@ import Box from "@mui/material/Box";
 
 export default function Layout({ children }: { children: React.ReactNode }) {
   return (
-    <Container maxWidth={false} disableGutters>
+    <Container maxWidth={false} disableGutters sx={{ overflow: "hidden" }}>
       <ResponsiveAppBar />
       <Box
         component="main"
