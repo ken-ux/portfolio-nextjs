@@ -41,8 +41,8 @@ export default function Pura() {
       >
         <Image
           src="/images/pura/pura_banner.png"
-          width="3000"
-          height="900"
+          width={3000}
+          height={900}
           alt="project banner"
           priority={true}
         />
