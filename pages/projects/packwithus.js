@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../../components/layout";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import Grid from "@mui/material/Grid";
 
 export default function PackWithUs() {

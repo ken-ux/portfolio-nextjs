@@ -4,7 +4,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import ProjectCard from "../components/ProjectCard";
 import Grid from "@mui/material/Grid";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Index() {
   return (
