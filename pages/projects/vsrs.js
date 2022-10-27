@@ -4,6 +4,7 @@ import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
 import Image from "next/image";
 import Grid from "@mui/material/Grid";
+import vsrsBanner from "../../public/images/vsrs/vsrs_banner_2.png";
 
 export default function Vsrs() {
   return (
@@ -35,15 +36,20 @@ export default function Vsrs() {
         sx={{
           position: "relative",
           width: "100vw",
+          height: "60vh",
           left: "calc(-50vw + 50%)",
           my: 4,
+          overflow: "hidden",
+          backgroundColor: "#F6F4E8",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
         }}
       >
         <Image
-          src="/images/vsrs/vsrs_banner.png"
-          width="3000"
-          height="900"
+          src={vsrsBanner}
           alt="project banner"
+          height="300"
           priority={true}
         />
       </Box>
