@@ -1,6 +1,6 @@
 import * as React from "react";
 import Image from "next/image";
-import Link from "../src/Link";
+import Link from '@mui/material/Link';
 import AppBar from "@mui/material/AppBar";
 import Box from "@mui/material/Box";
 import Toolbar from "@mui/material/Toolbar";
@@ -84,7 +84,7 @@ function ResponsiveAppBar(props) {
                 },
               }}
             >
-              <Image src="/icon.svg" height="50px" width="50px" alt="logo" />
+              <Image src="/icon.svg" height="50" width="50" alt="logo" />
             </Box>
           </Box>
 

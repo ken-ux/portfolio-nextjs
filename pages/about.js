@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Link from "../src/Link";
+import Link from '@mui/material/Link';
 import IconButton from "@mui/material/IconButton";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
