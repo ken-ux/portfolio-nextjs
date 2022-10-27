@@ -43,8 +43,8 @@ export default function PackWithUs() {
       >
         <Image
           src="/images/packwithus/pack_banner.png"
-          width="3000px"
-          height="900px"
+          width="3000"
+          height="900"
           alt="project banner"
           priority={true}
         />

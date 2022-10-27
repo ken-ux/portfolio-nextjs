@@ -41,8 +41,8 @@ export default function Vsrs() {
       >
         <Image
           src="/images/vsrs/vsrs_banner.png"
-          width="3000px"
-          height="900px"
+          width="3000"
+          height="900"
           alt="project banner"
           priority={true}
         />
