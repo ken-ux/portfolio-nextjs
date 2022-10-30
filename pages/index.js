@@ -61,24 +61,31 @@ export default function Index() {
       </Grid>
       <Grid container spacing={4}>
         <ProjectCard
+          image="/images/ddi_splash.png"
+          title="DoubleDown Interactive"
+          text="Work I've done as a UX designer at an established mobile gaming company."
+          platform="Mobile"
+          link="/projects/ddi"
+        />
+        <ProjectCard
           image="/images/vsrs_splash.png"
           title="VSRS Website Redesign"
           text="Redesign of a lab website informed through UX principles."
-          tags="UI/UX, Web Design, UX Research"
+          platform="Web"
           link="/projects/vsrs"
         />
         <ProjectCard
           image="/images/pura_splash.png"
           title="Pura"
           text="Mobile app for making fishing safer for coastal communities."
-          tags="UI/UX, Mobile Design"
+          platform="Mobile"
           link="/projects/pura"
         />
         <ProjectCard
           image="/images/packwithus_splash.png"
           title="Pack With Us"
           text="Service design for a holistic trip-planning experience."
-          tags="Service Design, Web Design, UX Research"
+          platform="Web + Mobile"
           link="/projects/packwithus"
         />
       </Grid>
