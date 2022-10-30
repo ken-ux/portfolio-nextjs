@@ -49,7 +49,7 @@ function InternalCard(props) {
               </Typography>
               <Typography>{props.text}</Typography>
               <br />
-              <Typography variant="subtitle">{props.tags}</Typography>
+              <Typography variant="subtitle">{props.platform + " Platform"}</Typography>
             </Box>
           </CardContent>
         </CardActionArea>
