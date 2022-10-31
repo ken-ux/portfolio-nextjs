@@ -68,6 +68,13 @@ export default function Index() {
           link="/projects/ddi"
         />
         <ProjectCard
+          image="/images/tft_splash.png"
+          title="Team Fight Tactics Redesign"
+          text="Redesign of the TFT customization interface for mobile devices."
+          platform="Mobile"
+          link="/projects/tft"
+        />
+        <ProjectCard
           image="/images/vsrs_splash.png"
           title="VSRS Website Redesign"
           text="Redesign of a lab website informed through UX principles."
