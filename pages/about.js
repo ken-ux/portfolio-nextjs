@@ -2,7 +2,7 @@ import * as React from "react";
 import Layout from "../components/layout";
 import Typography from "@mui/material/Typography";
 import Box from "@mui/material/Box";
-import Link from '@mui/material/Link';
+import Link from "@mui/material/Link";
 import IconButton from "@mui/material/IconButton";
 import EmailIcon from "@mui/icons-material/Email";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
@@ -26,18 +26,20 @@ export default function About() {
           </Typography>
           <br />
           <Typography>
-            I&apos;m a UX designer occasionally moonlighting as a frontend
-            developer. Starting off as a mostly self-taught coder, my interests
-            led me to UX in pursuit of a deeper understanding of why things are
-            the way they are. I love expanding how people experience the world
-            through visual and interactive design.
+            I&apos;m a UX designer, occasionally moonlighting as a frontend
+            developer, who has shipped products for both web and mobile. I love
+            curating entertaining experiences through deliberate visual and
+            interactive design. I adore every step of the design process; from
+            intial idea to implementation, I have the skills to support projects
+            at any part of the development lifecycle.
             <br />
             <br />
-            A core aspect of my identity is being a first-generation
-            Vietnamese-American growing up around South Seattle. In addition, as
-            a queer person of color, I heavily draw inspiration from the
-            resiliency of communities I am part of and continue to learn more
-            about.
+            A core aspect of my identity comes from my upbringing as a
+            first-generation, Vietnamese-American, unapologetically queer man in
+            Seattle who also played <em>a lot</em> of Nintendo 64. 
+            The resiliency and diversity of the communities I was
+            raised in and part of established the drive I have in promoting
+            visibility for queer people of color in creative industries.
             <br />
             <br />
             I graduated from the University of Washington with an M.S. in

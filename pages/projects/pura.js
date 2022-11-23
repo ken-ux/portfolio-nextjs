@@ -25,7 +25,7 @@ export default function Pura() {
         <Typography variant="h3" component="h1" sx={{ mb: 4 }}>
           <strong>Pura</strong>
         </Typography>
-        <Typography variant="body2">
+        <Typography>
           An app for making environmental data accessible for coastal
           communities.
         </Typography>

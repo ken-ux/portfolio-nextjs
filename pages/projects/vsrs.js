@@ -25,7 +25,7 @@ export default function Vsrs() {
         <Typography variant="h3" component="h1" sx={{ mb: 4 }}>
           <strong>VSRS Website Redesign</strong>
         </Typography>
-        <Typography variant="body2">
+        <Typography>
           A redesign of the Visualization Studies Research Studio&apos;s website
           based in stakeholder interviews and UX methodologies.
         </Typography>

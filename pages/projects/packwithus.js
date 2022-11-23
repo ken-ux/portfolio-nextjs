@@ -27,7 +27,7 @@ export default function PackWithUs() {
         <Typography variant="h3" component="h1" sx={{ mb: 4 }}>
           <strong>Pack With Us</strong>
         </Typography>
-        <Typography variant="body2">
+        <Typography>
           A multi-touchpoint service design that incorporates AI to streamline
           trip-planning.
         </Typography>

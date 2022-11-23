@@ -63,7 +63,7 @@ export default function Index() {
         <ProjectCard
           image="/images/ddi_splash.png"
           title="DoubleDown Interactive"
-          text="Work I've done as a UX designer at an established mobile gaming company."
+          text="Work I&apos;ve done as a UX designer creating AAA mobile games."
           platform="Mobile"
           link="/projects/ddi"
         />
