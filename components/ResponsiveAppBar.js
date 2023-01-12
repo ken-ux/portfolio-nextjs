@@ -84,7 +84,7 @@ function ResponsiveAppBar(props) {
                 },
               }}
             >
-              <Image src="/icon.svg" height="50px" width="50px" alt="logo" />
+              <Image src="/icon.svg" height="50" width="50" alt="logo" />
             </Box>
           </Box>
 
